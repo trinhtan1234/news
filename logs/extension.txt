@@ -420,3 +420,98 @@ Flutter (3.13.5): C:\src\flutter
 [1:52:21 PM] [General] [Info] Took 31ms to search for projects (5 levels)
 [1:52:21 PM] [General] [Info] Took 1ms to filter out excluded projects (0 exclusion rules)
 [1:53:18 PM] [General] [Info] Returning cached results for project search
+[1:56:52 PM] [General] [Info] Returning cached results for project search
+[2:00:50 PM] [General] [Info] Took 28ms to search for projects (5 levels)
+[2:00:50 PM] [General] [Info] Took 1ms to filter out excluded projects (0 exclusion rules)
+[2:01:26 PM] [General] [Info] Returning cached results for project search
+[2:01:48 PM] [General] [Info] Returning cached results for project search
+[2:01:57 PM] [General] [Info] Returning cached results for project search
+[4:15:45 PM] [General] [Info] Took 51ms to search for projects (5 levels)
+[4:15:45 PM] [General] [Info] Took 18ms to filter out excluded projects (0 exclusion rules)
+[4:17:37 PM] [General] [Info] Returning cached results for project search
+[4:18:05 PM] [General] [Info] Returning cached results for project search
+[4:21:48 PM] [General] [Info] Took 28ms to search for projects (5 levels)
+[4:21:48 PM] [General] [Info] Took 1ms to filter out excluded projects (0 exclusion rules)
+[4:23:32 PM] [General] [Info] Returning cached results for project search
+[4:24:05 PM] [General] [Info] Returning cached results for project search
+[4:41:56 PM] [General] [Info] Took 66ms to search for projects (5 levels)
+[4:41:56 PM] [General] [Info] Took 1ms to filter out excluded projects (0 exclusion rules)
+[4:44:54 PM] [General] [Info] Returning cached results for project search
+[4:45:29 PM] [General] [Info] Returning cached results for project search
+[4:45:41 PM] [General] [Info] Returning cached results for project search
+[4:45:54 PM] [General] [Info] Returning cached results for project search
+[4:46:25 PM] [General] [Info] Returning cached results for project search
+[4:46:32 PM] [General] [Info] Returning cached results for project search
+[4:46:32 PM] [General] [Error] [Sentinel kind: Collected, valueAsString: Unrecognized isolateId: 16436] from ext.flutter.inspector.setPubRootDirectories()
+#0      new _OutstandingRequest (package:vm_service/src/vm_service.dart:1928:45)
+#1      VmService._call (package:vm_service/src/vm_service.dart:2493:21)
+#2      VmService.callServiceExtension (package:vm_service/src/vm_service.dart:2464:14)
+#3      DartDebugAdapter.customRequest (package:dds/src/dap/adapters/dart.dart:831:43)
+#4      FlutterDebugAdapter.customRequest (package:flutter_tools/src/debug_adapters/flutter_adapter.dart:201:21)
+#5      BaseDebugAdapter.handle (package:dds/src/dap/base_debug_adapter.dart:141:20)
+#6      BaseDebugAdapter.handleIncomingRequest (package:dds/src/dap/base_debug_adapter.dart:437:7)
+#7      BaseDebugAdapter._handleIncomingMessage (package:dds/src/dap/base_debug_adapter.dart:285:7)
+#8      ByteStreamServerChannel._readMessage (package:dds/src/dap/protocol_stream.dart:82:18)
+#9      ByteStreamServerChannel.listen.<anonymous closure> (package:dds/src/dap/protocol_stream.dart:53:24)
+#10     _rootRunUnary (dart:async/zone.dart:1407:47)
+#11     _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#12     _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#13     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:339:11)
+#14     _DelayedData.perform (dart:async/stream_impl.dart:515:14)
+#15     _PendingEvents.handleNext (dart:async/stream_impl.dart:620:11)
+#16     _PendingEvents.schedule.<anonymous closure> (dart:async/stream_impl.dart:591:7)
+#17     _rootRun (dart:async/zone.dart:1391:47)
+#18     _CustomZone.run (dart:async/zone.dart:1301:19)
+#19     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+#20     _CustomZone.bindCallbackGuarded.<anonymous closure> (dart:async/zone.dart:1249:23)
+#21     _rootRun (dart:async/zone.dart:1399:13)
+#22     _CustomZone.run (dart:async/zone.dart:1301:19)
+#23     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+#24     _CustomZone.bindCallbackGuarded.<…
+[4:46:32 PM] [General] [Info] Returning cached results for project search
+[4:46:37 PM] [General] [Info] Returning cached results for project search
+[4:46:53 PM] [General] [Info] Returning cached results for project search
+[4:48:30 PM] [General] [Info] Took 34ms to search for projects (5 levels)
+[4:48:30 PM] [General] [Info] Took 1ms to filter out excluded projects (0 exclusion rules)
+[4:48:38 PM] [General] [Info] Returning cached results for project search
+[4:49:13 PM] [General] [Info] Returning cached results for project search
+[4:49:30 PM] [General] [Info] Returning cached results for project search
+[4:50:51 PM] [General] [Info] Returning cached results for project search
+[4:51:01 PM] [General] [Info] Returning cached results for project search
+[4:51:06 PM] [General] [Info] Returning cached results for project search
+[4:51:14 PM] [General] [Info] Returning cached results for project search
+[4:52:52 PM] [General] [Info] Returning cached results for project search
+[4:52:57 PM] [General] [Info] Returning cached results for project search
+[4:53:03 PM] [General] [Info] Returning cached results for project search
+[4:53:05 PM] [General] [Info] Using only available debug session
+[4:53:05 PM] [General] [Info] Exposing URL: ws://127.0.0.1:56772/RiVRjF38qTo%3D/ws
+[4:53:05 PM] [General] [Info] Mapping URI: http://127.0.0.1:56772/RiVRjF38qTo%3D/ws
+[4:53:06 PM] [General] [Info] Mapped URI: http://127.0.0.1:56772/RiVRjF38qTo%3D/ws
+[4:53:06 PM] [General] [Info] Mapped URL: http://127.0.0.1:56772/RiVRjF38qTo%3D/ws
+[4:53:06 PM] [General] [Info] Final URL: ws://127.0.0.1:56772/RiVRjF38qTo=/ws
+[4:54:03 PM] [General] [Info] Took 155ms to search for projects (5 levels)
+[4:54:03 PM] [General] [Info] Took 1ms to filter out excluded projects (0 exclusion rules)
+[4:54:17 PM] [General] [Info] Returning cached results for project search
+[4:54:25 PM] [General] [Info] Returning cached results for project search
+[4:54:41 PM] [General] [Info] Returning cached results for project search
+[4:54:48 PM] [General] [Info] Returning cached results for project search
+[4:54:55 PM] [General] [Info] Returning cached results for project search
+[4:55:19 PM] [General] [Info] Returning cached results for project search
+[4:55:25 PM] [General] [Info] Returning cached results for project search
+[5:04:14 PM] [General] [Info] Took 59ms to search for projects (5 levels)
+[5:04:14 PM] [General] [Info] Took 2ms to filter out excluded projects (0 exclusion rules)
+[5:04:56 PM] [General] [Info] Returning cached results for project search
+[5:05:06 PM] [General] [Info] Returning cached results for project search
+[5:05:30 PM] [General] [Info] Returning cached results for project search
+[5:07:41 PM] [General] [Info] Returning cached results for project search
+[5:07:50 PM] [General] [Info] Returning cached results for project search
+[5:08:01 PM] [General] [Info] Returning cached results for project search
+[5:08:24 PM] [General] [Info] Returning cached results for project search
+[5:09:09 PM] [General] [Info] Returning cached results for project search
+[5:36:49 PM] [General] [Info] Took 38ms to search for projects (5 levels)
+[5:36:49 PM] [General] [Info] Took 1ms to filter out excluded projects (0 exclusion rules)
+[5:39:03 PM] [General] [Info] Returning cached results for project search
+[5:41:00 PM] [General] [Info] Returning cached results for project search
+[5:41:39 PM] [General] [Info] Returning cached results for project search
+[5:41:44 PM] [General] [Info] Returning cached results for project search
+[5:41:46 PM] [General] [Info] Returning cached results for project search

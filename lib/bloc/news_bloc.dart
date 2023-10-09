@@ -8,8 +8,8 @@ class NewsBloc {
 
   NewsModel? news;
 
-  StreamController<NewsModel?> _newsStreamController =
-      new StreamController<NewsModel>();
+  final StreamController<NewsModel?> _newsStreamController =
+      StreamController<NewsModel>();
   Stream<NewsModel?> get newsStream => _newsStreamController.stream;
 
   Future getListNews() async {

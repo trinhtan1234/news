@@ -10,7 +10,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  NewsBloc _newsBloc = NewsBloc();
+  final NewsBloc _newsBloc = NewsBloc();
 
   @override
   void initState() {
@@ -46,13 +46,37 @@ class _MyHomePageState extends State<MyHomePage> {
                     itemCount: listNews.length,
                     itemBuilder: ((context, index) {
                       final news = listNews[index];
-                      return Container(
-                        margin: EdgeInsets.all(5),
-                        height: 400,
-                        color: Colors.blueGrey,
-                        child: ListTile(
-                          title: Text('Tiêu đề: ${news.title}'),
-                          subtitle: Text('Mô tả: ${news.description}'),
+                      return IntrinsicWidth(
+                        child: Container(
+                          margin: const EdgeInsets.all(10),
+                          // height: 400,
+                          color: const Color.fromARGB(77, 236, 229, 229),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: [
+                              ListTile(
+                                title: Text(
+                                  '${news.title}',
+                                  style: const TextStyle(
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                subtitle: Text('${news.description}'),
+                              ),
+                              if (news.urlToImage != null &&
+                                  news.urlToImage!.isNotEmpty)
+                                Expanded(
+                                  child: Container(
+                                    child: ClipRect(
+                                      child: Image(
+                                        image:
+                                            NetworkImage(news.urlToImage ?? ''),
+                                        fit: BoxFit.contain,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                            ],
+                          ),
                         ),
                       );
                     }));

@@ -17,7 +17,7 @@ class HttpService {
           return _dio.post(url);
       }
     } catch (e) {
-      throw e;
+      rethrow;
     }
   }
 }
