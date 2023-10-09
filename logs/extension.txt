@@ -419,3 +419,4 @@ Flutter (3.13.5): C:\src\flutter
 [1:52:21 PM] [General] [Info] Final URL: ws://127.0.0.1:56772/RiVRjF38qTo=/ws
 [1:52:21 PM] [General] [Info] Took 31ms to search for projects (5 levels)
 [1:52:21 PM] [General] [Info] Took 1ms to filter out excluded projects (0 exclusion rules)
+[1:53:18 PM] [General] [Info] Returning cached results for project search

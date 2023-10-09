@@ -46,7 +46,15 @@ class _MyHomePageState extends State<MyHomePage> {
                     itemCount: listNews.length,
                     itemBuilder: ((context, index) {
                       final news = listNews[index];
-                      return Text('${news.title}');
+                      return Container(
+                        margin: EdgeInsets.all(5),
+                        height: 400,
+                        color: Colors.blueGrey,
+                        child: ListTile(
+                          title: Text('Tiêu đề: ${news.title}'),
+                          subtitle: Text('Mô tả: ${news.description}'),
+                        ),
+                      );
                     }));
               } else {
                 return const Text('data');
