@@ -1,39 +1,58 @@
 import 'package:flutter/material.dart';
+import 'package:news/bloc/news_bloc.dart';
+import 'package:news/networking/models/newsmodel.dart';
 
-class MyHomePage extends StatelessWidget {
+class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
+
+  @override
+  State<MyHomePage> createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  NewsBloc _newsBloc = NewsBloc();
+
+  @override
+  void initState() {
+    loadData();
+    super.initState();
+  }
+
+  void loadData() async {
+    _newsBloc.getListNews();
+  }
+
+  @override
+  void dispose() {
+    _newsBloc.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        leading: IconButton(
-          onPressed: () {},
-          icon: const Icon(Icons.search_sharp),
-        ),
-        title: const Text(
-          'Tin tức mới',
-        ),
-        actions: [
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(Icons.person_2_sharp),
+      body: SafeArea(
+        child: Center(
+          child: StreamBuilder<NewsModel?>(
+            stream: _newsBloc.newsStream,
+            builder: (context, snapshot) {
+              if (!snapshot.hasData) {
+                return const CircularProgressIndicator();
+              }
+              final newsData = snapshot.data;
+              final listNews = newsData?.articles;
+              if (listNews != null && listNews.isNotEmpty) {
+                return ListView.builder(
+                    itemCount: listNews.length,
+                    itemBuilder: ((context, index) {
+                      final news = listNews[index];
+                      return Text('${news.title}');
+                    }));
+              } else {
+                return const Text('data');
+              }
+            },
           ),
-        ],
-      ),
-      body: Container(
-        margin: EdgeInsets.all(10),
-        child: const Column(
-          children: [
-            Row(
-              children: [
-                Expanded(
-                  child: Text('Tin dành cho bạn'),
-                ),
-                Icon(Icons.web_asset_off_rounded),
-              ],
-            )
-          ],
         ),
       ),
     );
