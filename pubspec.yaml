@@ -41,6 +41,7 @@ dependencies:
   location: ^5.0.3
   dio: ^5.3.3
   get: ^4.6.6
+  url_launcher: ^6.1.14
 
 dev_dependencies:
   flutter_test:
