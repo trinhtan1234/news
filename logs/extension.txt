@@ -10,164 +10,164 @@ Version: win 1.83.0
 Logging Categories:
     General
 
-Wed Oct 11 2023 [11:52:29 GMT+0700 (Indochina Time)] Log file started
-[11:52:29 AM] [General] [Info] Searching for SDKs...
-[11:52:29 AM] [General] [Info] Environment PATH:
-[11:52:29 AM] [General] [Info]     C:\Program Files\Common Files\Oracle\Java\javapath
-[11:52:29 AM] [General] [Info]     C:\Program Files (x86)\Common Files\Oracle\Java\javapath
-[11:52:29 AM] [General] [Info]     C:\Windows\system32
-[11:52:29 AM] [General] [Info]     C:\Windows
-[11:52:29 AM] [General] [Info]     C:\Windows\System32\Wbem
-[11:52:29 AM] [General] [Info]     C:\Windows\System32\WindowsPowerShell\v1.0\
-[11:52:29 AM] [General] [Info]     C:\Windows\System32\OpenSSH\
-[11:52:29 AM] [General] [Info]     C:\Program Files\dotnet\
-[11:52:29 AM] [General] [Info]     C:\ProgramData\chocolatey\bin
-[11:52:29 AM] [General] [Info]     C:\Program Files\Go\bin
-[11:52:29 AM] [General] [Info]     C:\Program Files\Git\cmd
-[11:52:29 AM] [General] [Info]     C:\src\tools
-[11:52:29 AM] [General] [Info]     C:\Program Files\nodejs\
-[11:52:29 AM] [General] [Info]     C:\Users\tantv\AppData\Local\Microsoft\WindowsApps
-[11:52:29 AM] [General] [Info]     C:\Program Files\Go\bin
-[11:52:29 AM] [General] [Info]     C:\Users\tantv\.dotnet\tools
-[11:52:29 AM] [General] [Info]     C:\Program Files\Go
-[11:52:29 AM] [General] [Info]     C:\src\flutter\bin
-[11:52:29 AM] [General] [Info]     C:\tools\dart-sdk\bin
-[11:52:29 AM] [General] [Info]     C:\Users\tantv\AppData\Roaming\Pub\Cache\bin
-[11:52:29 AM] [General] [Info]     C:\Users\tantv\go\bin
-[11:52:29 AM] [General] [Info]     C:\Users\tantv\AppData\Local\Programs\Microsoft VS Code\bin
-[11:52:29 AM] [General] [Info]     C:\Users\tantv\AppData\Roaming\npm
-[11:52:29 AM] [General] [Info]     C:\Program Files\nodejs\node_modules\npm
-[11:52:29 AM] [General] [Info] Took 88ms to search for projects (5 levels)
-[11:52:29 AM] [General] [Info] Took 10ms to filter out excluded projects (0 exclusion rules)
-[11:52:29 AM] [General] [Info] Found Flutter project at D:\Flutter\news:
+Wed Oct 11 2023 [18:03:35 GMT+0700 (Indochina Time)] Log file started
+[6:03:35 PM] [General] [Info] Searching for SDKs...
+[6:03:35 PM] [General] [Info] Environment PATH:
+[6:03:35 PM] [General] [Info]     C:\Program Files\Common Files\Oracle\Java\javapath
+[6:03:35 PM] [General] [Info]     C:\Program Files (x86)\Common Files\Oracle\Java\javapath
+[6:03:35 PM] [General] [Info]     C:\Windows\system32
+[6:03:35 PM] [General] [Info]     C:\Windows
+[6:03:35 PM] [General] [Info]     C:\Windows\System32\Wbem
+[6:03:35 PM] [General] [Info]     C:\Windows\System32\WindowsPowerShell\v1.0\
+[6:03:35 PM] [General] [Info]     C:\Windows\System32\OpenSSH\
+[6:03:35 PM] [General] [Info]     C:\Program Files\dotnet\
+[6:03:35 PM] [General] [Info]     C:\ProgramData\chocolatey\bin
+[6:03:35 PM] [General] [Info]     C:\Program Files\Go\bin
+[6:03:35 PM] [General] [Info]     C:\Program Files\Git\cmd
+[6:03:35 PM] [General] [Info]     C:\src\tools
+[6:03:35 PM] [General] [Info]     C:\Program Files\nodejs\
+[6:03:35 PM] [General] [Info]     C:\Users\tantv\AppData\Local\Microsoft\WindowsApps
+[6:03:35 PM] [General] [Info]     C:\Program Files\Go\bin
+[6:03:35 PM] [General] [Info]     C:\Users\tantv\.dotnet\tools
+[6:03:35 PM] [General] [Info]     C:\Program Files\Go
+[6:03:35 PM] [General] [Info]     C:\src\flutter\bin
+[6:03:35 PM] [General] [Info]     C:\tools\dart-sdk\bin
+[6:03:35 PM] [General] [Info]     C:\Users\tantv\AppData\Roaming\Pub\Cache\bin
+[6:03:35 PM] [General] [Info]     C:\Users\tantv\go\bin
+[6:03:35 PM] [General] [Info]     C:\Users\tantv\AppData\Local\Programs\Microsoft VS Code\bin
+[6:03:35 PM] [General] [Info]     C:\Users\tantv\AppData\Roaming\npm
+[6:03:35 PM] [General] [Info]     C:\Program Files\nodejs\node_modules\npm
+[6:03:35 PM] [General] [Info] Took 112ms to search for projects (5 levels)
+[6:03:35 PM] [General] [Info] Took 3ms to filter out excluded projects (0 exclusion rules)
+[6:03:35 PM] [General] [Info] Found Flutter project at D:\Flutter\news:
 			Mobile? true
 			Web? false
 			Create Trigger? false
 			Flutter Repo? false
-[11:52:29 AM] [General] [Info] Searching for flutter.bat
-[11:52:29 AM] [General] [Info]     Looking for flutter.bat in:
-[11:52:29 AM] [General] [Info]         D:\Flutter\news
-[11:52:29 AM] [General] [Info]         D:\Flutter\news -> D:\Flutter\news\bin
-[11:52:29 AM] [General] [Info]         C:\src\flutter\bin\
-[11:52:29 AM] [General] [Info]         D:\Flutter\news\.flutter
-[11:52:29 AM] [General] [Info]         D:\Flutter\news\.flutter -> D:\Flutter\news\.flutter\bin
-[11:52:29 AM] [General] [Info]         D:\Flutter\news\vendor\flutter
-[11:52:29 AM] [General] [Info]         D:\Flutter\news\vendor\flutter -> D:\Flutter\news\vendor\flutter\bin
-[11:52:29 AM] [General] [Info]         C:\Users\tantv\flutter-sdk
-[11:52:29 AM] [General] [Info]         C:\Users\tantv\flutter-sdk -> C:\Users\tantv\flutter-sdk\bin
-[11:52:29 AM] [General] [Info]         /google/flutter
-[11:52:29 AM] [General] [Info]         /google/flutter -> \google\flutter\bin
-[11:52:29 AM] [General] [Info]         C:\Program Files\Common Files\Oracle\Java\javapath
-[11:52:29 AM] [General] [Info]         C:\Program Files\Common Files\Oracle\Java\javapath -> C:\Program Files\Common Files\Oracle\Java\javapath\bin
-[11:52:29 AM] [General] [Info]         C:\Program Files (x86)\Common Files\Oracle\Java\javapath
-[11:52:29 AM] [General] [Info]         C:\Program Files (x86)\Common Files\Oracle\Java\javapath -> C:\Program Files (x86)\Common Files\Oracle\Java\javapath\bin
-[11:52:29 AM] [General] [Info]         C:\Windows\system32
-[11:52:29 AM] [General] [Info]         C:\Windows\system32 -> C:\Windows\system32\bin
-[11:52:29 AM] [General] [Info]         C:\Windows
-[11:52:29 AM] [General] [Info]         C:\Windows -> C:\Windows\bin
-[11:52:29 AM] [General] [Info]         C:\Windows\System32\Wbem
-[11:52:29 AM] [General] [Info]         C:\Windows\System32\Wbem -> C:\Windows\System32\Wbem\bin
-[11:52:29 AM] [General] [Info]         C:\Windows\System32\WindowsPowerShell\v1.0\
-[11:52:29 AM] [General] [Info]         C:\Windows\System32\WindowsPowerShell\v1.0\ -> C:\Windows\System32\WindowsPowerShell\v1.0\bin
-[11:52:29 AM] [General] [Info]         C:\Windows\System32\OpenSSH\
-[11:52:29 AM] [General] [Info]         C:\Windows\System32\OpenSSH\ -> C:\Windows\System32\OpenSSH\bin
-[11:52:29 AM] [General] [Info]         C:\Program Files\dotnet\
-[11:52:29 AM] [General] [Info]         C:\Program Files\dotnet\ -> C:\Program Files\dotnet\bin
-[11:52:29 AM] [General] [Info]         C:\ProgramData\chocolatey\bin
-[11:52:29 AM] [General] [Info]         C:\Program Files\Go\bin
-[11:52:29 AM] [General] [Info]         C:\Program Files\Git\cmd
-[11:52:29 AM] [General] [Info]         C:\Program Files\Git\cmd -> C:\Program Files\Git\cmd\bin
-[11:52:29 AM] [General] [Info]         C:\src\tools
-[11:52:29 AM] [General] [Info]         C:\src\tools -> C:\src\tools\bin
-[11:52:29 AM] [General] [Info]         C:\Program Files\nodejs\
-[11:52:29 AM] [General] [Info]         C:\Program Files\nodejs\ -> C:\Program Files\nodejs\bin
-[11:52:29 AM] [General] [Info]         C:\Users\tantv\AppData\Local\Microsoft\WindowsApps
-[11:52:29 AM] [General] [Info]         C:\Users\tantv\AppData\Local\Microsoft\WindowsApps -> C:\Users\tantv\AppData\Local\Microsoft\WindowsApps\bin
-[11:52:29 AM] [General] [Info]         C:\Program Files\Go\bin
-[11:52:29 AM] [General] [Info]         C:\Users\tantv\.dotnet\tools
-[11:52:29 AM] [General] [Info]         C:\Users\tantv\.dotnet\tools -> C:\Users\tantv\.dotnet\tools\bin
-[11:52:29 AM] [General] [Info]         C:\Program Files\Go
-[11:52:29 AM] [General] [Info]         C:\Program Files\Go -> C:\Program Files\Go\bin
-[11:52:29 AM] [General] [Info]         C:\src\flutter\bin
-[11:52:29 AM] [General] [Info]         C:\tools\dart-sdk\bin
-[11:52:29 AM] [General] [Info]         C:\Users\tantv\AppData\Roaming\Pub\Cache\bin
-[11:52:29 AM] [General] [Info]         C:\Users\tantv\go\bin
-[11:52:29 AM] [General] [Info]         C:\Users\tantv\AppData\Local\Programs\Microsoft VS Code\bin
-[11:52:29 AM] [General] [Info]         C:\Users\tantv\AppData\Roaming\npm
-[11:52:29 AM] [General] [Info]         C:\Users\tantv\AppData\Roaming\npm -> C:\Users\tantv\AppData\Roaming\npm\bin
-[11:52:29 AM] [General] [Info]         C:\Program Files\nodejs\node_modules\npm
-[11:52:29 AM] [General] [Info]         C:\Program Files\nodejs\node_modules\npm -> C:\Program Files\nodejs\node_modules\npm\bin
-[11:52:29 AM] [General] [Info]     Found at:
-[11:52:29 AM] [General] [Info]         C:\src\flutter\bin\
-[11:52:29 AM] [General] [Info]         C:\src\flutter\bin
-[11:52:29 AM] [General] [Info]     Candidate paths to be post-filtered:
-[11:52:29 AM] [General] [Info]         C:\src\flutter\bin\ -> C:\src\flutter
-[11:52:29 AM] [General] [Info]         C:\src\flutter\bin -> C:\src\flutter
-[11:52:29 AM] [General] [Info]     Found at C:\src\flutter\bin\ -> C:\src\flutter
-[11:52:29 AM] [General] [Info]     Returning SDK path C:\src\flutter for flutter.bat
-[11:52:29 AM] [General] [Info] Searching for dart.exe
-[11:52:29 AM] [General] [Info]     Looking for dart.exe in:
-[11:52:29 AM] [General] [Info]         C:\src\flutter\bin\cache\dart-sdk
-[11:52:29 AM] [General] [Info]         C:\src\flutter\bin\cache\dart-sdk -> C:\src\flutter\bin\cache\dart-sdk\bin
-[11:52:29 AM] [General] [Info]         C:\Program Files\Common Files\Oracle\Java\javapath
-[11:52:29 AM] [General] [Info]         C:\Program Files\Common Files\Oracle\Java\javapath -> C:\Program Files\Common Files\Oracle\Java\javapath\bin
-[11:52:29 AM] [General] [Info]         C:\Program Files (x86)\Common Files\Oracle\Java\javapath
-[11:52:29 AM] [General] [Info]         C:\Program Files (x86)\Common Files\Oracle\Java\javapath -> C:\Program Files (x86)\Common Files\Oracle\Java\javapath\bin
-[11:52:29 AM] [General] [Info]         C:\Windows\system32
-[11:52:29 AM] [General] [Info]         C:\Windows\system32 -> C:\Windows\system32\bin
-[11:52:29 AM] [General] [Info]         C:\Windows
-[11:52:29 AM] [General] [Info]         C:\Windows -> C:\Windows\bin
-[11:52:29 AM] [General] [Info]         C:\Windows\System32\Wbem
-[11:52:29 AM] [General] [Info]         C:\Windows\System32\Wbem -> C:\Windows\System32\Wbem\bin
-[11:52:29 AM] [General] [Info]         C:\Windows\System32\WindowsPowerShell\v1.0\
-[11:52:29 AM] [General] [Info]         C:\Windows\System32\WindowsPowerShell\v1.0\ -> C:\Windows\System32\WindowsPowerShell\v1.0\bin
-[11:52:29 AM] [General] [Info]         C:\Windows\System32\OpenSSH\
-[11:52:29 AM] [General] [Info]         C:\Windows\System32\OpenSSH\ -> C:\Windows\System32\OpenSSH\bin
-[11:52:29 AM] [General] [Info]         C:\Program Files\dotnet\
-[11:52:29 AM] [General] [Info]         C:\Program Files\dotnet\ -> C:\Program Files\dotnet\bin
-[11:52:29 AM] [General] [Info]         C:\ProgramData\chocolatey\bin
-[11:52:29 AM] [General] [Info]         C:\Program Files\Go\bin
-[11:52:29 AM] [General] [Info]         C:\Program Files\Git\cmd
-[11:52:29 AM] [General] [Info]         C:\Program Files\Git\cmd -> C:\Program Files\Git\cmd\bin
-[11:52:29 AM] [General] [Info]         C:\src\tools
-[11:52:29 AM] [General] [Info]         C:\src\tools -> C:\src\tools\bin
-[11:52:29 AM] [General] [Info]         C:\Program Files\nodejs\
-[11:52:29 AM] [General] [Info]         C:\Program Files\nodejs\ -> C:\Program Files\nodejs\bin
-[11:52:29 AM] [General] [Info]         C:\Users\tantv\AppData\Local\Microsoft\WindowsApps
-[11:52:29 AM] [General] [Info]         C:\Users\tantv\AppData\Local\Microsoft\WindowsApps -> C:\Users\tantv\AppData\Local\Microsoft\WindowsApps\bin
-[11:52:29 AM] [General] [Info]         C:\Program Files\Go\bin
-[11:52:29 AM] [General] [Info]         C:\Users\tantv\.dotnet\tools
-[11:52:29 AM] [General] [Info]         C:\Users\tantv\.dotnet\tools -> C:\Users\tantv\.dotnet\tools\bin
-[11:52:29 AM] [General] [Info]         C:\Program Files\Go
-[11:52:29 AM] [General] [Info]         C:\Program Files\Go -> C:\Program Files\Go\bin
-[11:52:29 AM] [General] [Info]         C:\src\flutter\bin
-[11:52:29 AM] [General] [Info]         C:\tools\dart-sdk\bin
-[11:52:29 AM] [General] [Info]         C:\Users\tantv\AppData\Roaming\Pub\Cache\bin
-[11:52:29 AM] [General] [Info]         C:\Users\tantv\go\bin
-[11:52:29 AM] [General] [Info]         C:\Users\tantv\AppData\Local\Programs\Microsoft VS Code\bin
-[11:52:29 AM] [General] [Info]         C:\Users\tantv\AppData\Roaming\npm
-[11:52:29 AM] [General] [Info]         C:\Users\tantv\AppData\Roaming\npm -> C:\Users\tantv\AppData\Roaming\npm\bin
-[11:52:29 AM] [General] [Info]         C:\Program Files\nodejs\node_modules\npm
-[11:52:29 AM] [General] [Info]         C:\Program Files\nodejs\node_modules\npm -> C:\Program Files\nodejs\node_modules\npm\bin
-[11:52:29 AM] [General] [Info]         C:\src\flutter\bin\cache\dart-sdk
-[11:52:29 AM] [General] [Info]         C:\src\flutter\bin\cache\dart-sdk -> C:\src\flutter\bin\cache\dart-sdk\bin
-[11:52:29 AM] [General] [Info]     Found at:
-[11:52:29 AM] [General] [Info]         C:\src\flutter\bin\cache\dart-sdk -> C:\src\flutter\bin\cache\dart-sdk\bin
-[11:52:29 AM] [General] [Info]         C:\tools\dart-sdk\bin
-[11:52:29 AM] [General] [Info]         C:\src\flutter\bin\cache\dart-sdk -> C:\src\flutter\bin\cache\dart-sdk\bin
-[11:52:29 AM] [General] [Info]     Candidate paths to be post-filtered:
-[11:52:29 AM] [General] [Info]         C:\src\flutter\bin\cache\dart-sdk
-[11:52:29 AM] [General] [Info]         C:\tools\dart-sdk\bin -> C:\tools\dart-sdk
-[11:52:29 AM] [General] [Info]         C:\src\flutter\bin\cache\dart-sdk
-[11:52:29 AM] [General] [Info]     Found at C:\src\flutter\bin\cache\dart-sdk
-[11:52:29 AM] [General] [Info]     Returning SDK path C:\src\flutter\bin\cache\dart-sdk for dart.exe
-[11:52:29 AM] [General] [Info] Experiment random number is 33 for experiment 'sdkDaps'. Experiment is enabled for <= 100
-[11:52:29 AM] [General] [Info] Experiment 'sdkDaps' is activating (not first time)
-[11:52:29 AM] [General] [Info] Experiment random number is 33 for experiment 'sdkDaps'. Experiment is enabled for <= 50
-[11:52:29 AM] [General] [Info] Experiment 'sdkDaps' is activating (not first time)
-[11:52:29 AM] [General] [Info] Experiment random number is 33 for experiment 'sdkDaps'. Experiment is enabled for <= 10
-[11:52:29 AM] [General] [Info] Experiment 'sdkDaps' does not apply and will not be activated
-[11:52:29 AM] [General] [Info] !! ⚠️ PLEASE REVIEW THIS LOG FOR SENSITIVE INFORMATION BEFORE SHARING ⚠️ !!
+[6:03:35 PM] [General] [Info] Searching for flutter.bat
+[6:03:35 PM] [General] [Info]     Looking for flutter.bat in:
+[6:03:35 PM] [General] [Info]         D:\Flutter\news
+[6:03:35 PM] [General] [Info]         D:\Flutter\news -> D:\Flutter\news\bin
+[6:03:35 PM] [General] [Info]         C:\src\flutter\bin\
+[6:03:35 PM] [General] [Info]         D:\Flutter\news\.flutter
+[6:03:35 PM] [General] [Info]         D:\Flutter\news\.flutter -> D:\Flutter\news\.flutter\bin
+[6:03:35 PM] [General] [Info]         D:\Flutter\news\vendor\flutter
+[6:03:35 PM] [General] [Info]         D:\Flutter\news\vendor\flutter -> D:\Flutter\news\vendor\flutter\bin
+[6:03:35 PM] [General] [Info]         C:\Users\tantv\flutter-sdk
+[6:03:35 PM] [General] [Info]         C:\Users\tantv\flutter-sdk -> C:\Users\tantv\flutter-sdk\bin
+[6:03:35 PM] [General] [Info]         /google/flutter
+[6:03:35 PM] [General] [Info]         /google/flutter -> \google\flutter\bin
+[6:03:35 PM] [General] [Info]         C:\Program Files\Common Files\Oracle\Java\javapath
+[6:03:35 PM] [General] [Info]         C:\Program Files\Common Files\Oracle\Java\javapath -> C:\Program Files\Common Files\Oracle\Java\javapath\bin
+[6:03:35 PM] [General] [Info]         C:\Program Files (x86)\Common Files\Oracle\Java\javapath
+[6:03:35 PM] [General] [Info]         C:\Program Files (x86)\Common Files\Oracle\Java\javapath -> C:\Program Files (x86)\Common Files\Oracle\Java\javapath\bin
+[6:03:35 PM] [General] [Info]         C:\Windows\system32
+[6:03:35 PM] [General] [Info]         C:\Windows\system32 -> C:\Windows\system32\bin
+[6:03:35 PM] [General] [Info]         C:\Windows
+[6:03:35 PM] [General] [Info]         C:\Windows -> C:\Windows\bin
+[6:03:35 PM] [General] [Info]         C:\Windows\System32\Wbem
+[6:03:35 PM] [General] [Info]         C:\Windows\System32\Wbem -> C:\Windows\System32\Wbem\bin
+[6:03:35 PM] [General] [Info]         C:\Windows\System32\WindowsPowerShell\v1.0\
+[6:03:35 PM] [General] [Info]         C:\Windows\System32\WindowsPowerShell\v1.0\ -> C:\Windows\System32\WindowsPowerShell\v1.0\bin
+[6:03:35 PM] [General] [Info]         C:\Windows\System32\OpenSSH\
+[6:03:35 PM] [General] [Info]         C:\Windows\System32\OpenSSH\ -> C:\Windows\System32\OpenSSH\bin
+[6:03:35 PM] [General] [Info]         C:\Program Files\dotnet\
+[6:03:35 PM] [General] [Info]         C:\Program Files\dotnet\ -> C:\Program Files\dotnet\bin
+[6:03:35 PM] [General] [Info]         C:\ProgramData\chocolatey\bin
+[6:03:35 PM] [General] [Info]         C:\Program Files\Go\bin
+[6:03:35 PM] [General] [Info]         C:\Program Files\Git\cmd
+[6:03:35 PM] [General] [Info]         C:\Program Files\Git\cmd -> C:\Program Files\Git\cmd\bin
+[6:03:35 PM] [General] [Info]         C:\src\tools
+[6:03:35 PM] [General] [Info]         C:\src\tools -> C:\src\tools\bin
+[6:03:35 PM] [General] [Info]         C:\Program Files\nodejs\
+[6:03:35 PM] [General] [Info]         C:\Program Files\nodejs\ -> C:\Program Files\nodejs\bin
+[6:03:35 PM] [General] [Info]         C:\Users\tantv\AppData\Local\Microsoft\WindowsApps
+[6:03:35 PM] [General] [Info]         C:\Users\tantv\AppData\Local\Microsoft\WindowsApps -> C:\Users\tantv\AppData\Local\Microsoft\WindowsApps\bin
+[6:03:35 PM] [General] [Info]         C:\Program Files\Go\bin
+[6:03:35 PM] [General] [Info]         C:\Users\tantv\.dotnet\tools
+[6:03:35 PM] [General] [Info]         C:\Users\tantv\.dotnet\tools -> C:\Users\tantv\.dotnet\tools\bin
+[6:03:35 PM] [General] [Info]         C:\Program Files\Go
+[6:03:35 PM] [General] [Info]         C:\Program Files\Go -> C:\Program Files\Go\bin
+[6:03:35 PM] [General] [Info]         C:\src\flutter\bin
+[6:03:35 PM] [General] [Info]         C:\tools\dart-sdk\bin
+[6:03:35 PM] [General] [Info]         C:\Users\tantv\AppData\Roaming\Pub\Cache\bin
+[6:03:35 PM] [General] [Info]         C:\Users\tantv\go\bin
+[6:03:35 PM] [General] [Info]         C:\Users\tantv\AppData\Local\Programs\Microsoft VS Code\bin
+[6:03:35 PM] [General] [Info]         C:\Users\tantv\AppData\Roaming\npm
+[6:03:35 PM] [General] [Info]         C:\Users\tantv\AppData\Roaming\npm -> C:\Users\tantv\AppData\Roaming\npm\bin
+[6:03:35 PM] [General] [Info]         C:\Program Files\nodejs\node_modules\npm
+[6:03:35 PM] [General] [Info]         C:\Program Files\nodejs\node_modules\npm -> C:\Program Files\nodejs\node_modules\npm\bin
+[6:03:35 PM] [General] [Info]     Found at:
+[6:03:35 PM] [General] [Info]         C:\src\flutter\bin\
+[6:03:35 PM] [General] [Info]         C:\src\flutter\bin
+[6:03:35 PM] [General] [Info]     Candidate paths to be post-filtered:
+[6:03:35 PM] [General] [Info]         C:\src\flutter\bin\ -> C:\src\flutter
+[6:03:35 PM] [General] [Info]         C:\src\flutter\bin -> C:\src\flutter
+[6:03:35 PM] [General] [Info]     Found at C:\src\flutter\bin\ -> C:\src\flutter
+[6:03:35 PM] [General] [Info]     Returning SDK path C:\src\flutter for flutter.bat
+[6:03:35 PM] [General] [Info] Searching for dart.exe
+[6:03:35 PM] [General] [Info]     Looking for dart.exe in:
+[6:03:35 PM] [General] [Info]         C:\src\flutter\bin\cache\dart-sdk
+[6:03:35 PM] [General] [Info]         C:\src\flutter\bin\cache\dart-sdk -> C:\src\flutter\bin\cache\dart-sdk\bin
+[6:03:35 PM] [General] [Info]         C:\Program Files\Common Files\Oracle\Java\javapath
+[6:03:35 PM] [General] [Info]         C:\Program Files\Common Files\Oracle\Java\javapath -> C:\Program Files\Common Files\Oracle\Java\javapath\bin
+[6:03:35 PM] [General] [Info]         C:\Program Files (x86)\Common Files\Oracle\Java\javapath
+[6:03:35 PM] [General] [Info]         C:\Program Files (x86)\Common Files\Oracle\Java\javapath -> C:\Program Files (x86)\Common Files\Oracle\Java\javapath\bin
+[6:03:35 PM] [General] [Info]         C:\Windows\system32
+[6:03:35 PM] [General] [Info]         C:\Windows\system32 -> C:\Windows\system32\bin
+[6:03:35 PM] [General] [Info]         C:\Windows
+[6:03:35 PM] [General] [Info]         C:\Windows -> C:\Windows\bin
+[6:03:35 PM] [General] [Info]         C:\Windows\System32\Wbem
+[6:03:35 PM] [General] [Info]         C:\Windows\System32\Wbem -> C:\Windows\System32\Wbem\bin
+[6:03:35 PM] [General] [Info]         C:\Windows\System32\WindowsPowerShell\v1.0\
+[6:03:35 PM] [General] [Info]         C:\Windows\System32\WindowsPowerShell\v1.0\ -> C:\Windows\System32\WindowsPowerShell\v1.0\bin
+[6:03:35 PM] [General] [Info]         C:\Windows\System32\OpenSSH\
+[6:03:35 PM] [General] [Info]         C:\Windows\System32\OpenSSH\ -> C:\Windows\System32\OpenSSH\bin
+[6:03:35 PM] [General] [Info]         C:\Program Files\dotnet\
+[6:03:35 PM] [General] [Info]         C:\Program Files\dotnet\ -> C:\Program Files\dotnet\bin
+[6:03:35 PM] [General] [Info]         C:\ProgramData\chocolatey\bin
+[6:03:35 PM] [General] [Info]         C:\Program Files\Go\bin
+[6:03:35 PM] [General] [Info]         C:\Program Files\Git\cmd
+[6:03:35 PM] [General] [Info]         C:\Program Files\Git\cmd -> C:\Program Files\Git\cmd\bin
+[6:03:35 PM] [General] [Info]         C:\src\tools
+[6:03:35 PM] [General] [Info]         C:\src\tools -> C:\src\tools\bin
+[6:03:35 PM] [General] [Info]         C:\Program Files\nodejs\
+[6:03:35 PM] [General] [Info]         C:\Program Files\nodejs\ -> C:\Program Files\nodejs\bin
+[6:03:35 PM] [General] [Info]         C:\Users\tantv\AppData\Local\Microsoft\WindowsApps
+[6:03:35 PM] [General] [Info]         C:\Users\tantv\AppData\Local\Microsoft\WindowsApps -> C:\Users\tantv\AppData\Local\Microsoft\WindowsApps\bin
+[6:03:35 PM] [General] [Info]         C:\Program Files\Go\bin
+[6:03:35 PM] [General] [Info]         C:\Users\tantv\.dotnet\tools
+[6:03:35 PM] [General] [Info]         C:\Users\tantv\.dotnet\tools -> C:\Users\tantv\.dotnet\tools\bin
+[6:03:35 PM] [General] [Info]         C:\Program Files\Go
+[6:03:35 PM] [General] [Info]         C:\Program Files\Go -> C:\Program Files\Go\bin
+[6:03:35 PM] [General] [Info]         C:\src\flutter\bin
+[6:03:35 PM] [General] [Info]         C:\tools\dart-sdk\bin
+[6:03:35 PM] [General] [Info]         C:\Users\tantv\AppData\Roaming\Pub\Cache\bin
+[6:03:35 PM] [General] [Info]         C:\Users\tantv\go\bin
+[6:03:35 PM] [General] [Info]         C:\Users\tantv\AppData\Local\Programs\Microsoft VS Code\bin
+[6:03:35 PM] [General] [Info]         C:\Users\tantv\AppData\Roaming\npm
+[6:03:35 PM] [General] [Info]         C:\Users\tantv\AppData\Roaming\npm -> C:\Users\tantv\AppData\Roaming\npm\bin
+[6:03:35 PM] [General] [Info]         C:\Program Files\nodejs\node_modules\npm
+[6:03:35 PM] [General] [Info]         C:\Program Files\nodejs\node_modules\npm -> C:\Program Files\nodejs\node_modules\npm\bin
+[6:03:35 PM] [General] [Info]         C:\src\flutter\bin\cache\dart-sdk
+[6:03:35 PM] [General] [Info]         C:\src\flutter\bin\cache\dart-sdk -> C:\src\flutter\bin\cache\dart-sdk\bin
+[6:03:35 PM] [General] [Info]     Found at:
+[6:03:35 PM] [General] [Info]         C:\src\flutter\bin\cache\dart-sdk -> C:\src\flutter\bin\cache\dart-sdk\bin
+[6:03:35 PM] [General] [Info]         C:\tools\dart-sdk\bin
+[6:03:35 PM] [General] [Info]         C:\src\flutter\bin\cache\dart-sdk -> C:\src\flutter\bin\cache\dart-sdk\bin
+[6:03:35 PM] [General] [Info]     Candidate paths to be post-filtered:
+[6:03:35 PM] [General] [Info]         C:\src\flutter\bin\cache\dart-sdk
+[6:03:35 PM] [General] [Info]         C:\tools\dart-sdk\bin -> C:\tools\dart-sdk
+[6:03:35 PM] [General] [Info]         C:\src\flutter\bin\cache\dart-sdk
+[6:03:35 PM] [General] [Info]     Found at C:\src\flutter\bin\cache\dart-sdk
+[6:03:35 PM] [General] [Info]     Returning SDK path C:\src\flutter\bin\cache\dart-sdk for dart.exe
+[6:03:35 PM] [General] [Info] Experiment random number is 33 for experiment 'sdkDaps'. Experiment is enabled for <= 100
+[6:03:35 PM] [General] [Info] Experiment 'sdkDaps' is activating (not first time)
+[6:03:35 PM] [General] [Info] Experiment random number is 33 for experiment 'sdkDaps'. Experiment is enabled for <= 50
+[6:03:35 PM] [General] [Info] Experiment 'sdkDaps' is activating (not first time)
+[6:03:35 PM] [General] [Info] Experiment random number is 33 for experiment 'sdkDaps'. Experiment is enabled for <= 10
+[6:03:35 PM] [General] [Info] Experiment 'sdkDaps' does not apply and will not be activated
+[6:03:35 PM] [General] [Info] !! ⚠️ PLEASE REVIEW THIS LOG FOR SENSITIVE INFORMATION BEFORE SHARING ⚠️ !!
 Dart Code extension: 3.74.0
 Flutter extension: 3.74.0 (not activated)
 
@@ -179,12 +179,12 @@ Workspace type: Flutter (LSP)
 
 Dart (3.1.2): C:\src\flutter\bin\cache\dart-sdk
 Flutter (3.13.5): C:\src\flutter
-[11:52:29 AM] [General] [Info] Returning cached results for project search
-[11:52:29 AM] [General] [Info] Activating Flutter extension for Flutter project...
-[11:52:29 AM] [General] [Info] Version last used for Pub is 3.1.2 (3.1.0), current is 3.1.2 (3.1.0)
-[11:52:29 AM] [General] [Info] Found 0 folders requiring "pub get" or "pub upgrade":
-[11:52:30 AM] [General] [Info] Loaded 20000 package names from vscode-userdata:/c%3A/Users/tantv/AppData/Roaming/Code/User/globalStorage/dart-code.dart-code/package_cache.json
-[11:52:30 AM] [General] [Info] !! ⚠️ PLEASE REVIEW THIS LOG FOR SENSITIVE INFORMATION BEFORE SHARING ⚠️ !!
+[6:03:35 PM] [General] [Info] Returning cached results for project search
+[6:03:35 PM] [General] [Info] Activating Flutter extension for Flutter project...
+[6:03:35 PM] [General] [Info] Version last used for Pub is 3.1.2 (3.1.0), current is 3.1.2 (3.1.0)
+[6:03:35 PM] [General] [Info] Found 0 folders requiring "pub get" or "pub upgrade":
+[6:03:35 PM] [General] [Info] Loaded 20000 package names from vscode-userdata:/c%3A/Users/tantv/AppData/Roaming/Code/User/globalStorage/dart-code.dart-code/package_cache.json
+[6:03:38 PM] [General] [Info] !! ⚠️ PLEASE REVIEW THIS LOG FOR SENSITIVE INFORMATION BEFORE SHARING ⚠️ !!
 Dart Code extension: 3.74.0
 Flutter extension: 3.74.0 (activated)
 
@@ -196,140 +196,8 @@ Workspace type: Flutter (LSP)
 
 Dart (3.1.2): C:\src\flutter\bin\cache\dart-sdk
 Flutter (3.13.5): C:\src\flutter
-[11:52:34 AM] [General] [Info] Returning cached results for project search
-[11:52:34 AM] [General] [Info] Checking 1 projects for supported platforms
-[11:52:34 AM] [General] [Info] Supported platforms for the workspace are linux, macos, windows, ios, android, web
-[11:52:38 AM] [General] [Info] Returning cached results for project search
-[11:54:32 AM] [General] [Info] Pubspec D:\Flutter\news\pubspec.yaml was modified
-[11:54:33 AM] [General] [Info] Returning cached results for project search
-[11:54:33 AM] [General] [Info] Version last used for Pub is 3.1.2 (3.1.0), current is 3.1.2 (3.1.0)
-[11:54:33 AM] [General] [Info] Found 1 folders requiring "pub get" or "pub upgrade":
-    D:\Flutter\news (get: true, upgrade: false, reason: pubspec.yaml was modified (Wed Oct 11 2023 11:54:32 GMT+0700 (Indochina Time)) more recently than pubspec.lock (Tue Oct 10 2023 17:32:01 GMT+0700 (Indochina Time)))
-[11:55:29 AM] [General] [Info] Returning cached results for project search
-[11:56:16 AM] [General] [Info] Returning cached results for project search
-[11:56:19 AM] [General] [Info] Pubspec D:\Flutter\news\pubspec.yaml was modified
-[11:56:20 AM] [General] [Info] Returning cached results for project search
-[11:56:20 AM] [General] [Info] Version last used for Pub is 3.1.2 (3.1.0), current is 3.1.2 (3.1.0)
-[11:56:20 AM] [General] [Info] Found 1 folders requiring "pub get" or "pub upgrade":
-    D:\Flutter\news (get: true, upgrade: false, reason: pubspec.yaml was modified (Wed Oct 11 2023 11:56:19 GMT+0700 (Indochina Time)) more recently than pubspec.lock (Wed Oct 11 2023 11:55:46 GMT+0700 (Indochina Time)))
-[12:21:58 PM] [General] [Info] Pubspec D:\Flutter\news\pubspec.yaml was modified
-[12:21:59 PM] [General] [Info] Took 56ms to search for projects (5 levels)
-[12:21:59 PM] [General] [Info] Took 3ms to filter out excluded projects (0 exclusion rules)
-[12:21:59 PM] [General] [Info] Version last used for Pub is 3.1.2 (3.1.0), current is 3.1.2 (3.1.0)
-[12:21:59 PM] [General] [Info] Found 1 folders requiring "pub get" or "pub upgrade":
-    D:\Flutter\news (get: true, upgrade: false, reason: pubspec.yaml was modified (Wed Oct 11 2023 12:21:58 GMT+0700 (Indochina Time)) more recently than pubspec.lock (Wed Oct 11 2023 11:57:45 GMT+0700 (Indochina Time)))
-[12:22:00 PM] [General] [Info] Returning cached results for project search
-[12:22:01 PM] [General] [Info] Returning cached results for project search
-[12:22:22 PM] [General] [Info] Returning cached results for project search
-[12:22:22 PM] [General] [Info] Checking 1 projects for supported platforms
-[12:22:22 PM] [General] [Info] Supported platforms for the workspace are linux, macos, windows, ios, android, web
-[12:22:43 PM] [General] [Info] Saving emulator-5554 as preferred device
-[12:22:43 PM] [General] [Info] Returning cached results for project search
-[12:22:43 PM] [General] [Info] Checking 1 projects for supported platforms
-[12:22:43 PM] [General] [Info] Supported platforms for the workspace are linux, macos, windows, ios, android, web
-[12:23:06 PM] [General] [Info] Starting debug session...
-[12:23:06 PM] [General] [Info]     workspace: D:\Flutter\news
-[12:23:06 PM] [General] [Info]     program  : D:\Flutter\news\lib\main.dart
-[12:23:06 PM] [General] [Info] Setting cwd based on likely entry point: D:\Flutter\news
-[12:23:06 PM] [General] [Info] Using workspace as cwd: D:\Flutter\news
-[12:23:06 PM] [General] [Info] Detected launch project as Flutter
-[12:23:06 PM] [General] [Info] Using Flutter debug adapter for this session
-[12:23:06 PM] [General] [Info] Getting DevTools server address to pass to Flutter...
-[12:23:06 PM] [General] [Info] Checking for errors before launching
-[12:23:06 PM] [General] [Info] Debug session starting...
-    {
-        "name": "Dart  (Pixel 6 Pro API 33)",
-        "noDebug": false,
-        "request": "launch",
-        "type": "dart",
-        "program": "D:\\Flutter\\news\\lib\\main.dart",
-        "dartCodeDebugSessionID": "session-614e2",
-        "cwd": "D:\\Flutter\\news",
-        "deviceId": "emulator-5554",
-        "deviceName": "Pixel 6 Pro API 33 (android-x64)",
-        "toolEnv": {
-            "FLUTTER_HOST": "VSCode",
-            "PUB_ENVIRONMENT": "vscode.dart-code",
-            "FLUTTER_ROOT": "C:\\src\\flutter"
-        },
-        "sendLogsToClient": false,
-        "sendCustomProgressEvents": true,
-        "allowAnsiColorOutput": true,
-        "additionalProjectPaths": [
-            "D:\\Flutter\\news"
-        ],
-        "args": [],
-        "vmAdditionalArgs": [],
-        "toolArgs": [
-            "-d",
-            "emulator-5554",
-            "--devtools-server-address",
-            "http://127.0.0.1:9100/"
-        ],
-        "vmServicePort": 0,
-        "dartSdkPath": "C:\\src\\flutter\\bin\\cache\\dart-sdk",
-        "vmServiceLogFile": "D:\\Flutter\\news\\logs\\observatory.txt",
-        "maxLogLineLength": 2000,
-        "dartTestLogFile": "D:\\Flutter\\news\\logs\\dart_test.txt",
-        "debugSdkLibraries": false,
-        "debugExternalPackageLibraries": true,
-        "showDartDeveloperLogs": true,
-        "evaluateGettersInDebugViews": true,
-        "evaluateToStringInDebugViews": true,
-        "flutterSdkPath": "C:\\src\\flutter",
-        "useInspectorNotificationsForWidgetErrors": true,
-        "flutterRunLogFile": "D:\\Flutter\\news\\logs\\flutter_run.txt",
-        "flutterTestLogFile": "D:\\Flutter\\news\\logs\\flutter_test.txt",
-        "showMemoryUsage": false,
-        "debuggerType": 2
-    }
-[12:23:06 PM] [General] [Info] Using flutter debugger for Flutter
-[12:23:06 PM] [General] [Info] SDK DAP setting is true, set by sdkDaps experiment
-[12:23:06 PM] [General] [Info] Running SDK DAP Dart VM in undefined: C:\src\flutter\bin\flutter.bat debug_adapter and options {"env":{"FLUTTER_HOST":"VSCode","PUB_ENVIRONMENT":"vscode.dart-code","FLUTTER_ROOT":"C:\\src\\flutter"}}
-[12:23:06 PM] [General] [Info] Did not find session 9ff5f735-cf11-4c46-9850-22a88ce91ba8 to handle dart.progressStart. There were 0 sessions:
-[12:23:06 PM] [General] [Info] Event will be queued and processed when the session start event fires
-[12:23:07 PM] [General] [Info] Processing delayed event dart.progressStart for session 9ff5f735-cf11-4c46-9850-22a88ce91ba8
-[12:24:11 PM] [General] [Info] Exposing URL: ws://127.0.0.1:50856/SkkqCUSXtwA%3D/ws
-[12:24:11 PM] [General] [Info] Mapping URI: http://127.0.0.1:50856/SkkqCUSXtwA%3D/ws
-[12:24:11 PM] [General] [Info] Mapped URI: http://127.0.0.1:50856/SkkqCUSXtwA%3D/ws
-[12:24:11 PM] [General] [Info] Mapped URL: http://127.0.0.1:50856/SkkqCUSXtwA%3D/ws
-[12:24:11 PM] [General] [Info] Final URL: ws://127.0.0.1:50856/SkkqCUSXtwA=/ws
-[12:24:11 PM] [General] [Info] Returning cached results for project search
-[12:25:23 PM] [General] [Info] Returning cached results for project search
-[12:25:59 PM] [General] [Info] Pubspec D:\Flutter\news\pubspec.yaml was modified
-[12:26:00 PM] [General] [Info] Returning cached results for project search
-[12:26:00 PM] [General] [Info] Version last used for Pub is 3.1.2 (3.1.0), current is 3.1.2 (3.1.0)
-[12:26:00 PM] [General] [Info] Found 1 folders requiring "pub get" or "pub upgrade":
-    D:\Flutter\news (get: true, upgrade: false, reason: pubspec.yaml was modified (Wed Oct 11 2023 12:25:59 GMT+0700 (Indochina Time)) more recently than pubspec.lock (Wed Oct 11 2023 12:22:00 GMT+0700 (Indochina Time)))
-[12:26:25 PM] [General] [Info] Returning cached results for project search
-[12:26:45 PM] [General] [Info] Pubspec D:\Flutter\news\pubspec.yaml was modified
-[12:26:46 PM] [General] [Info] Returning cached results for project search
-[12:26:46 PM] [General] [Info] Version last used for Pub is 3.1.2 (3.1.0), current is 3.1.2 (3.1.0)
-[12:26:46 PM] [General] [Info] Found 1 folders requiring "pub get" or "pub upgrade":
-    D:\Flutter\news (get: true, upgrade: false, reason: pubspec.yaml was modified (Wed Oct 11 2023 12:26:45 GMT+0700 (Indochina Time)) more recently than pubspec.lock (Wed Oct 11 2023 12:26:01 GMT+0700 (Indochina Time)))
-[12:26:51 PM] [General] [Info] Returning cached results for project search
-[12:27:18 PM] [General] [Info] Took 55ms to search for projects (5 levels)
-[12:27:18 PM] [General] [Info] Took 2ms to filter out excluded projects (0 exclusion rules)
-[12:39:34 PM] [General] [Info] Took 51ms to search for projects (5 levels)
-[12:39:34 PM] [General] [Info] Took 2ms to filter out excluded projects (0 exclusion rules)
-[12:39:39 PM] [General] [Info] Pubspec D:\Flutter\news\pubspec.yaml was modified
-[12:39:40 PM] [General] [Info] Returning cached results for project search
-[12:39:40 PM] [General] [Info] Version last used for Pub is 3.1.2 (3.1.0), current is 3.1.2 (3.1.0)
-[12:39:40 PM] [General] [Info] Found 1 folders requiring "pub get" or "pub upgrade":
-    D:\Flutter\news (get: true, upgrade: false, reason: pubspec.yaml was modified (Wed Oct 11 2023 12:39:39 GMT+0700 (Indochina Time)) more recently than pubspec.lock (Wed Oct 11 2023 12:26:48 GMT+0700 (Indochina Time)))
-[12:41:43 PM] [General] [Info] Returning cached results for project search
-[12:46:30 PM] [General] [Info] Took 41ms to search for projects (5 levels)
-[12:46:30 PM] [General] [Info] Took 3ms to filter out excluded projects (0 exclusion rules)
-[12:50:37 PM] [General] [Info] Pubspec D:\Flutter\news\pubspec.yaml was modified
-[12:50:38 PM] [General] [Info] Returning cached results for project search
-[12:50:38 PM] [General] [Info] Version last used for Pub is 3.1.2 (3.1.0), current is 3.1.2 (3.1.0)
-[12:50:38 PM] [General] [Info] Found 1 folders requiring "pub get" or "pub upgrade":
-    D:\Flutter\news (get: true, upgrade: false, reason: pubspec.yaml was modified (Wed Oct 11 2023 12:50:36 GMT+0700 (Indochina Time)) more recently than pubspec.lock (Wed Oct 11 2023 12:39:47 GMT+0700 (Indochina Time)))
-[12:50:41 PM] [General] [Info] Returning cached results for project search
-[12:51:06 PM] [General] [Info] Returning cached results for project search
-[12:52:51 PM] [General] [Info] Pubspec D:\Flutter\news\pubspec.yaml was modified
-[12:52:52 PM] [General] [Info] Took 68ms to search for projects (5 levels)
-[12:52:52 PM] [General] [Info] Took 3ms to filter out excluded projects (0 exclusion rules)
-[12:52:52 PM] [General] [Info] Version last used for Pub is 3.1.2 (3.1.0), current is 3.1.2 (3.1.0)
-[12:52:52 PM] [General] [Info] Found 0 folders requiring "pub get" or "pub upgrade":
-[12:52:53 PM] [General] [Info] Returning cached results for project search
+[6:03:42 PM] [General] [Info] Returning cached results for project search
+[6:03:42 PM] [General] [Info] Checking 1 projects for supported platforms
+[6:03:43 PM] [General] [Info] Returning cached promise for getSupportedPlatforms()
+[6:03:43 PM] [General] [Info] Returning cached promise for getSupportedPlatforms()
+[6:03:43 PM] [General] [Info] Supported platforms for the workspace are linux, macos, windows, ios, android, web
