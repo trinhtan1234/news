@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:news/home/myhompage.dart';
+import 'package:news/home/detail_news_page/myhompage.dart';
+
+import 'finance/screen_finance.dart';
 
 class ScreenTabBar extends StatefulWidget {
   const ScreenTabBar({super.key});
@@ -84,7 +86,7 @@ class _ScreenTabBarState extends State<ScreenTabBar>
             child: MyHomePage(),
           ),
           Center(
-            child: Text("It's rainy here"),
+            child: ScreenFinance(),
           ),
           Center(
             child: Text("It's sunny here"),

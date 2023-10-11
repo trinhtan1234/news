@@ -30,5 +30,6 @@ class NewsBloc {
 
   void dispose() {
     _newsStreamController.close();
+    _news1StreamController.close();
   }
 }

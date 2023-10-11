@@ -3,7 +3,7 @@ import 'package:lottie/lottie.dart';
 import 'package:news/bloc/news_bloc.dart';
 import 'package:news/networking/models/newsmodel.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
-import 'detail_news_page/detail_news_page.dart';
+import 'detail_news_page.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
@@ -193,15 +193,15 @@ class _ListNews extends StatelessWidget {
               children: const [
                 Row(
                   children: [
-                    Icon(Icons.star_outline_outlined),
                     Text(
-                      'Follow',
+                      'Thời sự',
+                      style: TextStyle(fontSize: 10),
                     ),
                   ],
                 ),
                 Row(
                   children: [
-                    Icon(Icons.comment_outlined),
+                    Icon(Icons.mark_chat_read_outlined),
                     Text(
                       '22',
                       style: TextStyle(color: Colors.red),
