@@ -1,19 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:news/networking/models/newsmodel.dart';
 
 class ScreenDetailNews extends StatelessWidget {
   final Article news;
 
   const ScreenDetailNews({super.key, required this.news});
-
-  _launchURL() async {
-    if (await canLaunchUrl((news.url ?? '') as Uri)) {
-      await launch(news.url ?? '');
-    } else {
-      throw 'Could not launch ${news.url ?? ''}';
-    }
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -68,7 +59,7 @@ class ScreenDetailNews extends StatelessWidget {
               children: [
                 Text(
                   news.url ?? 'No url',
-                  style: TextStyle(),
+                  style: const TextStyle(),
                 ),
               ],
             )

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 import 'package:news/bloc/news_bloc.dart';
 import 'package:news/networking/models/newsmodel.dart';
-
+import 'package:pull_to_refresh/pull_to_refresh.dart';
 import 'detail_news_page/detail_news_page.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -13,16 +14,26 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   final NewsBloc _newsBloc = NewsBloc();
+  final RefreshController _refreshController =
+      RefreshController(initialRefresh: false);
 
   @override
   void initState() {
     loadData();
-
     super.initState();
   }
 
   void loadData() async {
     _newsBloc.getListNews();
+  }
+
+  void _onRefresh() {
+    Future.delayed(const Duration(milliseconds: 1000));
+    _refreshController.refreshCompleted();
+  }
+
+  void _onLoading() {
+    Future.delayed(const Duration(milliseconds: 1000));
   }
 
   @override
@@ -41,17 +52,31 @@ class _MyHomePageState extends State<MyHomePage> {
             stream: _newsBloc.newsStream,
             builder: (context, snapshot) {
               if (!snapshot.hasData) {
-                return const CircularProgressIndicator();
+                return Lottie.asset('assets/lottie/lotties.json',
+                    width: 100, height: 100);
               }
               final newsData = snapshot.data;
               final listNews = newsData?.articles;
               if (listNews != null && listNews.isNotEmpty) {
-                return ListView.builder(
-                    itemCount: listNews.length,
-                    itemBuilder: ((context, index) {
-                      final news = listNews[index];
-                      return _ListNews(news: news);
-                    }));
+                return SmartRefresher(
+                  enablePullDown: true,
+                  enablePullUp: true,
+                  header: const ClassicHeader(
+                    idleText: '',
+                    releaseText: '',
+                    refreshingText: '',
+                    completeText: '',
+                  ),
+                  controller: _refreshController,
+                  onRefresh: _onRefresh,
+                  onLoading: _onLoading,
+                  child: ListView.builder(
+                      itemCount: listNews.length,
+                      itemBuilder: ((context, index) {
+                        final news = listNews[index];
+                        return _ListNews(news: news);
+                      })),
+                );
               } else {
                 return const Text('data');
               }
