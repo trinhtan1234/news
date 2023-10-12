@@ -14,33 +14,37 @@ class _ScreenFinanceState extends State<ScreenFinance> {
   final RefreshController _refreshController =
       RefreshController(initialRefresh: false);
 
+  // @override
+  // void initState() {
+  //   loadData();
+  //   super.initState();
+  // }
+
+  // void loadData() async {
+  //   _newsBloc.getListNews1();
+  // }
+
+  // void _onRefresh() {
+  //   Future.delayed(const Duration(milliseconds: 1000));
+  //   _refreshController.refreshCompleted();
+  // }
+
+  // void _onLoading() {
+  //   Future.delayed(const Duration(milliseconds: 1000));
+  // }
+
+  // @override
+  // void dispose() {
+  //   _newsBloc.dispose();
+  //   super.dispose();
+  // }
+
   @override
-  void initState() {
-    loadData();
-    super.initState();
-  }
-
-  void loadData() async {
-    _newsBloc.getListNews1();
-  }
-
-  void _onRefresh() {
-    Future.delayed(Duration(milliseconds: 1000));
-    _refreshController.refreshCompleted();
-  }
-
-  void _onLoading() {
-    Future.delayed(Duration(milliseconds: 1000));
-  }
-  @override
-  void dispose() {
-   _newsBloc.dispose()
-    super.dispose();
-  }
-    @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: SafeArea(child: Center(),),
+    return const Scaffold(
+      body: SafeArea(
+        child: Center(),
+      ),
     );
   }
 }

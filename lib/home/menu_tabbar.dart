@@ -34,7 +34,6 @@ class _ScreenTabBarState extends State<ScreenTabBar>
           child: Text(
             'News',
             style: TextStyle(
-              color: Colors.brown,
               fontWeight: FontWeight.bold,
             ),
           ),
@@ -42,10 +41,13 @@ class _ScreenTabBarState extends State<ScreenTabBar>
         actions: const [
           Row(
             children: [
-              Icon(Icons.notifications_none_outlined),
+              Icon(
+                Icons.notifications_none_outlined,
+              ),
               Text(
                 '20',
-                style: TextStyle(color: Colors.red),
+                style:
+                    TextStyle(color: Colors.red, fontWeight: FontWeight.bold),
               ),
             ],
           ),

@@ -4,7 +4,7 @@ import 'package:news/bloc/news_bloc.dart';
 import 'package:news/networking/models/newsmodel.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 
-import 'detail_news_page.dart';
+import 'detail_news_page/detail_news_page.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
@@ -108,14 +108,9 @@ class _ListNews extends StatelessWidget {
         );
       },
       child: Container(
-        decoration: const BoxDecoration(
-          color: Colors.white60,
-          border: Border(
-            top: BorderSide(width: 0.5),
-          ),
-        ),
         margin: const EdgeInsets.all(10),
         height: 400,
+        color: Colors.white,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
@@ -127,32 +122,17 @@ class _ListNews extends StatelessWidget {
                       '${news.title}',
                       style: const TextStyle(
                         fontWeight: FontWeight.bold,
-                        // color: Colors.brown,
+                        color: Colors.brown,
                       ),
                     ),
                   ),
-                  Container(
-                    height: 35,
-                    decoration: BoxDecoration(
-                      border: Border.all(),
-                    ),
-                    child: Center(
-                      child: TextButton(
-                        onPressed: () {},
-                        child: const Row(
-                          children: [
-                            Icon(Icons.add),
-                            Text(
-                              'Follow',
-                              style: TextStyle(
-                                  // color: Color.fromARGB(255, 63, 66, 69),
-                                  fontWeight: FontWeight.bold),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  )
+                  TextButton(
+                      onPressed: () {},
+                      child: const Text(
+                        'Follow',
+                        style: TextStyle(
+                            color: Colors.blue, fontWeight: FontWeight.bold),
+                      ))
                 ],
               ),
               subtitle: Column(
@@ -205,9 +185,9 @@ class _ListNews extends StatelessWidget {
                   ),
                 ),
               ),
-            // const Padding(
-            //   padding: EdgeInsets.all(5),
-            // ),
+            const Padding(
+              padding: EdgeInsets.all(5),
+            ),
             // ignore: prefer_const_constructors
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -216,16 +196,15 @@ class _ListNews extends StatelessWidget {
                   children: [
                     Text(
                       'News',
-                      style: TextStyle(fontSize: 10),
                     ),
                   ],
                 ),
                 Row(
                   children: [
-                    Icon(Icons.mark_chat_read_outlined),
+                    Icon(Icons.comment_outlined),
                     Text(
                       '22',
-                      style: TextStyle(color: Colors.deepPurple),
+                      style: TextStyle(color: Colors.red),
                     ),
                   ],
                 ),
