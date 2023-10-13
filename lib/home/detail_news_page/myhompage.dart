@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart';
 import 'package:news/bloc/news_bloc.dart';
 import 'package:news/networking/models/newsmodel.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
+import 'package:skeletons/skeletons.dart';
 
 import 'detail_news_page.dart';
 
@@ -53,8 +53,19 @@ class _MyHomePageState extends State<MyHomePage> {
             stream: _newsBloc.newsStream,
             builder: (context, snapshot) {
               if (!snapshot.hasData) {
-                return Lottie.asset('assets/lottie/lotties.json',
-                    width: 100, height: 100);
+                return Column(
+                  children: [
+                    SkeletonLine(
+                      style: SkeletonLineStyle(height: 20, width: 160),
+                    ),
+                    SizedBox(
+                      height: 16,
+                    ),
+                    SkeletonLine(
+                      style: SkeletonLineStyle(height: 150),
+                    )
+                  ],
+                );
               }
               final newsData = snapshot.data;
               final listNews = newsData?.articles;
@@ -103,7 +114,9 @@ class _ListNews extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => ScreenDetailNews(news: news),
+            builder: (context) => ScreenDetailNews(
+              news: news,
+            ),
           ),
         );
       },
