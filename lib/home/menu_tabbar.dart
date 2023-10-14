@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:news/home/detail_news_page/myhompage.dart';
+import 'package:news/home/myhompage.dart';
 
 import 'finance/screen_finance.dart';
 

@@ -4,7 +4,7 @@ import 'package:news/networking/models/newsmodel.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 import 'package:skeletons/skeletons.dart';
 
-import 'detail_news_page.dart';
+import 'detail_news_page_home/detail_news_page.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
@@ -135,6 +135,7 @@ class _ListNews extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+            // ignore: avoid_unnecessary_containers
             Container(
               child: ListTile(
                 title: Row(
@@ -231,9 +232,10 @@ class _ListNews extends StatelessWidget {
                 Row(
                   children: [
                     Icon(Icons.mark_chat_read_outlined),
+                    Padding(padding: EdgeInsets.only(right: 15)),
                     Text(
                       '22',
-                      style: TextStyle(color: Colors.deepPurple),
+                      style: TextStyle(color: Colors.red),
                     ),
                   ],
                 ),
