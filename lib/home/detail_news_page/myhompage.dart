@@ -53,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
             stream: _newsBloc.newsStream,
             builder: (context, snapshot) {
               if (!snapshot.hasData) {
-                return Column(
+                return const Column(
                   children: [
                     SkeletonLine(
                       style: SkeletonLineStyle(height: 20, width: 160),
@@ -63,6 +63,9 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     SkeletonLine(
                       style: SkeletonLineStyle(height: 150),
+                    ),
+                    SkeletonLine(
+                      style: SkeletonLineStyle(height: 40),
                     )
                   ],
                 );
@@ -132,74 +135,68 @@ class _ListNews extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            ListTile(
-              title: Row(
-                children: [
-                  Flexible(
-                    child: Text(
-                      '${news.title}',
-                      style: const TextStyle(
-                        fontWeight: FontWeight.bold,
-                        // color: Colors.brown,
-                      ),
-                    ),
-                  ),
-                  Container(
-                    height: 35,
-                    decoration: BoxDecoration(
-                      border: Border.all(),
-                    ),
-                    child: Center(
-                      child: TextButton(
-                        onPressed: () {},
-                        child: const Row(
-                          children: [
-                            Icon(Icons.add),
-                            Text(
-                              'Follow',
-                              style: TextStyle(
-                                  // color: Color.fromARGB(255, 63, 66, 69),
-                                  fontWeight: FontWeight.bold),
-                            ),
-                          ],
+            Container(
+              child: ListTile(
+                title: Row(
+                  children: [
+                    Flexible(
+                      child: Text(
+                        '${news.title}',
+                        style: const TextStyle(
+                          fontWeight: FontWeight.bold,
+                          // color: Colors.brown,
                         ),
                       ),
                     ),
-                  )
-                ],
-              ),
-              subtitle: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Row(
-                    children: [
-                      Flexible(
-                        child: Text(
-                          '${news.description}',
-                          maxLines: 2,
-                        ),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    children: [
-                      Row(
+                    TextButton(
+                      onPressed: () {},
+                      child: const Row(
                         children: [
-                          const Icon(
-                            Icons.public,
-                            size: 15,
-                          ),
+                          Icon(Icons.add),
                           Text(
-                            '${news.publishedAt}',
-                            style: const TextStyle(
-                              fontStyle: FontStyle.italic,
-                            ),
+                            'Follow',
+                            style: TextStyle(
+                                // color: Color.fromARGB(255, 63, 66, 69),
+                                fontWeight: FontWeight.bold),
                           ),
                         ],
-                      )
-                    ],
-                  ),
-                ],
+                      ),
+                    ),
+                  ],
+                ),
+                subtitle: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        Flexible(
+                          child: Text(
+                            '${news.description}',
+                            maxLines: 2,
+                          ),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Row(
+                          children: [
+                            const Icon(
+                              Icons.public,
+                              size: 15,
+                            ),
+                            Text(
+                              '${news.publishedAt}',
+                              style: const TextStyle(
+                                fontStyle: FontStyle.italic,
+                              ),
+                            ),
+                          ],
+                        )
+                      ],
+                    ),
+                  ],
+                ),
               ),
             ),
             if (news.urlToImage != null && news.urlToImage!.isNotEmpty)
@@ -218,9 +215,7 @@ class _ListNews extends StatelessWidget {
                   ),
                 ),
               ),
-            // const Padding(
-            //   padding: EdgeInsets.all(5),
-            // ),
+            const Padding(padding: EdgeInsets.only(top: 10)),
             // ignore: prefer_const_constructors
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -229,7 +224,7 @@ class _ListNews extends StatelessWidget {
                   children: [
                     Text(
                       'News',
-                      style: TextStyle(fontSize: 10),
+                      style: TextStyle(fontSize: 15),
                     ),
                   ],
                 ),

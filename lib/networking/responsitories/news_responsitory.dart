@@ -1,3 +1,4 @@
+import 'package:news/networking/models/image_model.dart';
 import 'package:news/networking/models/newsmodel.dart';
 import 'package:news/networking/responsitories/http_service.dart';
 import 'package:news/networking/responsitories/url.dart';
@@ -13,6 +14,20 @@ class NewsRepository {
       final dataResponse = response?.data;
       if (dataResponse != null) {
         return NewsModel.fromJson(dataResponse);
+      }
+      return null;
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  Future<ImageModel?> getImageAPI() async {
+    try {
+      final response = await _server.request(UrlApp.imageapi);
+      final dataResponse = response?.data;
+
+      if (dataResponse != null) {
+        return ImageModel.fromJson(dataResponse);
       }
       return null;
     } catch (e) {

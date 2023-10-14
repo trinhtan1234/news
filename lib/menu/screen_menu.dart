@@ -49,29 +49,30 @@ class ScreenMenu extends StatelessWidget {
               ),
               onChanged: (text) {},
             ),
-            Row(
-              children: [
-                Expanded(
-                  child: Row(
-                    children: [
-                      IconButton(
-                        onPressed: () {},
-                        icon: const Icon(Icons.person),
+            TextButton(
+              onPressed: () {},
+              child: Row(
+                children: [
+                  Expanded(
+                    // ignore: avoid_unnecessary_containers
+                    child: Container(
+                      child: const Row(
+                        children: [
+                          Icon(Icons.person),
+                          Padding(
+                            padding: EdgeInsets.only(right: 20),
+                          ),
+                          Text('Đăng nhập/Tạo tài khoản'),
+                        ],
                       ),
-                      TextButton(
-                        onPressed: () {},
-                        child: const Text('Đăng nhập/Tạo tài khoản'),
-                      ),
-                    ],
+                    ),
                   ),
-                ),
-                IconButton(
-                  onPressed: () {},
-                  icon: const Icon(
-                    Icons.arrow_forward_ios,
-                  ),
-                ),
-              ],
+                  // ignore: avoid_unnecessary_containers
+                  Container(
+                    child: const Icon(Icons.arrow_forward_ios),
+                  )
+                ],
+              ),
             ),
             const Divider(),
             Row(
