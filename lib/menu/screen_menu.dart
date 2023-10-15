@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news/components/textbuttom.dart';
 
 class ScreenMenu extends StatelessWidget {
   const ScreenMenu({super.key});
@@ -8,7 +9,7 @@ class ScreenMenu extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: const Icon(
-          Icons.abc,
+          Icons.fiber_new,
           size: 40,
           color: Colors.brown,
         ),
@@ -21,6 +22,7 @@ class ScreenMenu extends StatelessWidget {
             onPressed: () {},
             icon: const Icon(
               Icons.menu,
+              color: Colors.brown,
             ),
           ),
           IconButton(
@@ -49,323 +51,92 @@ class ScreenMenu extends StatelessWidget {
               ),
               onChanged: (text) {},
             ),
-            TextButton(
-              onPressed: () {},
-              child: Row(
-                children: [
-                  Expanded(
-                    // ignore: avoid_unnecessary_containers
-                    child: Container(
-                      child: const Row(
-                        children: [
-                          Icon(Icons.person),
-                          Padding(
-                            padding: EdgeInsets.only(right: 20),
-                          ),
-                          Text('Đăng nhập/Tạo tài khoản'),
-                        ],
-                      ),
-                    ),
-                  ),
-                  // ignore: avoid_unnecessary_containers
-                  Container(
-                    child: const Icon(Icons.arrow_forward_ios),
-                  )
-                ],
-              ),
+            const AppTextButtom(
+              iconLeft: Icon(Icons.person),
+              iconRight: Icon(Icons.arrow_forward_ios),
+              labelTitle: 'Login/Sign',
             ),
             const Divider(),
-            Row(
+            const AppTextButtom(
+              iconLeft: Icon(Icons.settings),
+              iconRight: Icon(Icons.arrow_forward_ios),
+              labelTitle: 'Setting',
+            ),
+            const Divider(),
+            const AppTextButtom(
+              iconLeft: Icon(Icons.menu),
+              iconRight: Icon(Icons.arrow_forward_ios),
+              labelTitle: 'Sort, hide, show categories',
+            ),
+            const Divider(),
+            const AppTextButtom(
+              iconLeft: Icon(Icons.timeline),
+              iconRight: Icon(Icons.arrow_forward_ios),
+              labelTitle: 'Watch it later',
+            ),
+            const Divider(),
+            const AppTextButtom(
+              iconLeft: Icon(Icons.widgets),
+              iconRight: Icon(Icons.arrow_forward_ios),
+              labelTitle: 'Widgets',
+            ),
+            const Divider(),
+            const Row(
               children: [
-                Expanded(
-                  child: Row(
-                    children: [
-                      IconButton(
-                        onPressed: () {},
-                        icon: const Icon(Icons.settings),
-                      ),
-                      TextButton(
-                        onPressed: () {},
-                        child: const Text('Thiết lập ứngn dụng'),
-                      ),
-                    ],
-                  ),
-                ),
-                IconButton(
-                  onPressed: () {},
-                  icon: const Icon(
-                    Icons.arrow_forward_ios,
+                Text(
+                  'News by region',
+                  style: TextStyle(
+                    color: Colors.deepPurple,
                   ),
                 ),
               ],
             ),
             const Divider(),
-            Row(
+            const AppTextButtom(
+              iconLeft: Icon(Icons.location_on),
+              iconRight: Icon(Icons.arrow_forward_ios),
+              labelTitle: 'Viet Nam',
+            ),
+            const Divider(),
+            const AppTextButtom(
+              iconLeft: Icon(Icons.location_on),
+              iconRight: Icon(Icons.arrow_forward_ios),
+              labelTitle: 'World',
+            ),
+            const Divider(),
+            const Row(
               children: [
-                Expanded(
-                  child: Row(
-                    children: [
-                      IconButton(
-                        onPressed: () {},
-                        icon: const Icon(Icons.menu),
-                      ),
-                      TextButton(
-                        onPressed: () {},
-                        child: const Text('Sắp xếp, ẩn, hiện chuyên mục'),
-                      ),
-                    ],
-                  ),
-                ),
-                IconButton(
-                  onPressed: () {},
-                  icon: const Icon(
-                    Icons.arrow_forward_ios,
+                Text(
+                  'Categories',
+                  style: TextStyle(
+                    color: Colors.deepPurple,
                   ),
                 ),
               ],
             ),
             const Divider(),
-            Row(
-              children: [
-                Expanded(
-                  child: Row(
-                    children: [
-                      IconButton(
-                        onPressed: () {},
-                        icon: const Icon(Icons.watch_later),
-                      ),
-                      TextButton(
-                        onPressed: () {},
-                        child: const Text('Xem sau'),
-                      ),
-                    ],
-                  ),
-                ),
-                IconButton(
-                  onPressed: () {},
-                  icon: const Icon(
-                    Icons.arrow_forward_ios,
-                  ),
-                ),
-              ],
+            const AppTextButtom(
+              iconLeft: Icon(Icons.fiber_new),
+              iconRight: Icon(Icons.arrow_forward_ios),
+              labelTitle: 'Home',
             ),
             const Divider(),
-            Row(
-              children: [
-                Expanded(
-                  child: Row(
-                    children: [
-                      IconButton(
-                        onPressed: () {},
-                        icon: const Icon(Icons.widgets),
-                      ),
-                      TextButton(
-                        onPressed: () {},
-                        child: const Text('Tiện ích'),
-                      ),
-                    ],
-                  ),
-                ),
-                IconButton(
-                  onPressed: () {},
-                  icon: const Icon(
-                    Icons.arrow_forward_ios,
-                  ),
-                ),
-              ],
+            const AppTextButtom(
+              iconLeft: Icon(Icons.fiber_new),
+              iconRight: Icon(Icons.arrow_forward_ios),
+              labelTitle: 'Finance',
             ),
             const Divider(),
-            Row(
-              children: [
-                Expanded(
-                  child: Row(
-                    children: [
-                      // IconButton(
-                      //   onPressed: () {},
-                      //   icon: Icon(Icons.settings),
-                      // ),
-                      TextButton(
-                        onPressed: () {},
-                        child: const Text('Tin theo khu vực'),
-                      ),
-                    ],
-                  ),
-                ),
-                // IconButton(
-                //   onPressed: () {},
-                //   icon: Icon(
-                //     Icons.arrow_forward_ios,
-                //   ),
-                // ),
-              ],
+            const AppTextButtom(
+              iconLeft: Icon(Icons.fiber_new),
+              iconRight: Icon(Icons.arrow_forward_ios),
+              labelTitle: 'Business',
             ),
             const Divider(),
-            Row(
-              children: [
-                Expanded(
-                  child: Row(
-                    children: [
-                      // IconButton(
-                      //   onPressed: () {},
-                      //   icon: Icon(Icons.settings),
-                      // ),
-                      TextButton(
-                        onPressed: () {},
-                        child: const Text(
-                          'Hà Nội',
-                          style: TextStyle(fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                IconButton(
-                  onPressed: () {},
-                  icon: const Icon(
-                    Icons.arrow_forward_ios,
-                  ),
-                ),
-              ],
-            ),
-            const Divider(),
-            Row(
-              children: [
-                Expanded(
-                  child: Row(
-                    children: [
-                      // IconButton(
-                      //   onPressed: () {},
-                      //   icon: Icon(Icons.settings),
-                      // ),
-                      TextButton(
-                        onPressed: () {},
-                        child: const Text(
-                          'Hồ Chí Minh',
-                          style: TextStyle(fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                IconButton(
-                  onPressed: () {},
-                  icon: const Icon(
-                    Icons.arrow_forward_ios,
-                  ),
-                ),
-              ],
-            ),
-            const Divider(),
-            Row(
-              children: [
-                Expanded(
-                  child: Row(
-                    children: [
-                      // IconButton(
-                      //   onPressed: () {},
-                      //   icon: Icon(Icons.settings),
-                      // ),
-                      TextButton(
-                        onPressed: () {},
-                        child: const Text(
-                          'Chuyên mục',
-                          // style: TextStyle(fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                IconButton(
-                  onPressed: () {},
-                  icon: const Icon(
-                    Icons.arrow_forward_ios,
-                  ),
-                ),
-              ],
-            ),
-            const Divider(),
-            Row(
-              children: [
-                Expanded(
-                  child: Row(
-                    children: [
-                      // IconButton(
-                      //   onPressed: () {},
-                      //   icon: Icon(Icons.settings),
-                      // ),
-                      TextButton(
-                        onPressed: () {},
-                        child: const Text(
-                          'Trang chủ',
-                          style: TextStyle(fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                IconButton(
-                  onPressed: () {},
-                  icon: const Icon(
-                    Icons.arrow_forward_ios,
-                  ),
-                ),
-              ],
-            ),
-            const Divider(),
-            Row(
-              children: [
-                Expanded(
-                  child: Row(
-                    children: [
-                      // IconButton(
-                      //   onPressed: () {},
-                      //   icon: Icon(Icons.settings),
-                      // ),
-                      TextButton(
-                        onPressed: () {},
-                        child: const Text(
-                          'Mới nhất',
-                          style: TextStyle(fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                IconButton(
-                  onPressed: () {},
-                  icon: const Icon(
-                    Icons.arrow_forward_ios,
-                  ),
-                ),
-              ],
-            ),
-            const Divider(),
-            Row(
-              children: [
-                Expanded(
-                  child: Row(
-                    children: [
-                      // IconButton(
-                      //   onPressed: () {},
-                      //   icon: Icon(Icons.settings),
-                      // ),
-                      TextButton(
-                        onPressed: () {},
-                        child: const Text(
-                          'Podcasts',
-                          style: TextStyle(fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                IconButton(
-                  onPressed: () {},
-                  icon: const Icon(
-                    Icons.arrow_forward_ios,
-                  ),
-                ),
-              ],
+            const AppTextButtom(
+              iconLeft: Icon(Icons.fiber_new),
+              iconRight: Icon(Icons.arrow_forward_ios),
+              labelTitle: 'World',
             ),
             const Divider(),
           ],

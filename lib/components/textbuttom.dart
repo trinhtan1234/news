@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 
 class AppTextButtom extends StatefulWidget {
-  final Icon? iconLeft;
-  final String? labelTitle;
-  final Icon? iconRight;
+  final Icon iconLeft;
+  final String labelTitle;
+  final Icon iconRight;
+
   const AppTextButtom({
     super.key,
-    this.iconLeft,
-    this.iconRight,
-    this.labelTitle,
+    required this.iconLeft,
+    required this.iconRight,
+    required this.labelTitle,
   });
 
   @override
@@ -23,13 +24,20 @@ class _AppTextButtomState extends State<AppTextButtom> {
       child: Row(
         children: [
           Expanded(
-            // ignore: avoid_unnecessary_containers
-            child: Container(),
+            child: Row(
+              children: [
+                widget.iconLeft, // Display iconLeft or an empty SizedBox
+                const SizedBox(
+                    width: 8.0), // Add some spacing between icon and label
+                Text(widget.labelTitle), // Display labelTitle or an empty Text
+                // Add some spacing between label and iconRight
+                // Display iconRight or an empty SizedBox
+              ],
+            ),
           ),
-          // ignore: avoid_unnecessary_containers
           Container(
-            child: const Icon(Icons.arrow_forward_ios),
-          )
+            child: widget.iconRight,
+          ),
         ],
       ),
     );
