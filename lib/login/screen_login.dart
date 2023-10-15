@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:login/login/conpoment/button.dart';
-import 'package:login/login/conpoment/text.dart';
-import 'package:login/login/conpoment/textfield.dart';
-import 'package:login/login/screen_sign.dart';
+import 'package:news/components/button.dart';
+import 'package:news/components/text.dart';
+import 'package:news/components/textfield.dart';
 
 class ScreenLogin extends StatelessWidget {
   const ScreenLogin({super.key});
@@ -62,10 +61,10 @@ class ScreenLogin extends StatelessWidget {
                 Expanded(
                   child: TextButton(
                     onPressed: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) {
-                        return const RadioGroup();
-                      }));
+                      // Navigator.push(context,
+                      //     MaterialPageRoute(builder: (context) {
+                      //   return();
+                      // }));
                     },
                     child: const Text('Register'),
                   ),

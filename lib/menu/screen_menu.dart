@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news/components/textbuttom.dart';
+import 'package:news/login/screen_login.dart';
 
 class ScreenMenu extends StatelessWidget {
   const ScreenMenu({super.key});
@@ -51,34 +52,46 @@ class ScreenMenu extends StatelessWidget {
               ),
               onChanged: (text) {},
             ),
-            const AppTextButtom(
-              iconLeft: Icon(Icons.person),
-              iconRight: Icon(Icons.arrow_forward_ios),
+            AppTextButtom(
+              iconLeft: const Icon(Icons.person),
+              iconRight: const Icon(Icons.arrow_forward_ios),
               labelTitle: 'Login/Sign',
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const ScreenLogin(),
+                  ),
+                );
+              },
             ),
             const Divider(),
-            const AppTextButtom(
-              iconLeft: Icon(Icons.settings),
-              iconRight: Icon(Icons.arrow_forward_ios),
+            AppTextButtom(
+              iconLeft: const Icon(Icons.settings),
+              iconRight: const Icon(Icons.arrow_forward_ios),
               labelTitle: 'Setting',
+              onPressed: () {},
             ),
             const Divider(),
-            const AppTextButtom(
-              iconLeft: Icon(Icons.menu),
-              iconRight: Icon(Icons.arrow_forward_ios),
+            AppTextButtom(
+              iconLeft: const Icon(Icons.menu),
+              iconRight: const Icon(Icons.arrow_forward_ios),
               labelTitle: 'Sort, hide, show categories',
+              onPressed: () {},
             ),
             const Divider(),
-            const AppTextButtom(
-              iconLeft: Icon(Icons.timeline),
-              iconRight: Icon(Icons.arrow_forward_ios),
+            AppTextButtom(
+              iconLeft: const Icon(Icons.timeline),
+              iconRight: const Icon(Icons.arrow_forward_ios),
               labelTitle: 'Watch it later',
+              onPressed: () {},
             ),
             const Divider(),
-            const AppTextButtom(
-              iconLeft: Icon(Icons.widgets),
-              iconRight: Icon(Icons.arrow_forward_ios),
+            AppTextButtom(
+              iconLeft: const Icon(Icons.widgets),
+              iconRight: const Icon(Icons.arrow_forward_ios),
               labelTitle: 'Widgets',
+              onPressed: () {},
             ),
             const Divider(),
             const Row(
@@ -92,16 +105,18 @@ class ScreenMenu extends StatelessWidget {
               ],
             ),
             const Divider(),
-            const AppTextButtom(
-              iconLeft: Icon(Icons.location_on),
-              iconRight: Icon(Icons.arrow_forward_ios),
+            AppTextButtom(
+              iconLeft: const Icon(Icons.location_on),
+              iconRight: const Icon(Icons.arrow_forward_ios),
               labelTitle: 'Viet Nam',
+              onPressed: () {},
             ),
             const Divider(),
-            const AppTextButtom(
-              iconLeft: Icon(Icons.location_on),
-              iconRight: Icon(Icons.arrow_forward_ios),
+            AppTextButtom(
+              iconLeft: const Icon(Icons.location_on),
+              iconRight: const Icon(Icons.arrow_forward_ios),
               labelTitle: 'World',
+              onPressed: () {},
             ),
             const Divider(),
             const Row(
@@ -115,28 +130,82 @@ class ScreenMenu extends StatelessWidget {
               ],
             ),
             const Divider(),
-            const AppTextButtom(
-              iconLeft: Icon(Icons.fiber_new),
-              iconRight: Icon(Icons.arrow_forward_ios),
+            AppTextButtom(
+              iconLeft: const Icon(Icons.fiber_new),
+              iconRight: const Icon(Icons.arrow_forward_ios),
               labelTitle: 'Home',
+              onPressed: () {},
             ),
             const Divider(),
-            const AppTextButtom(
-              iconLeft: Icon(Icons.fiber_new),
-              iconRight: Icon(Icons.arrow_forward_ios),
+            AppTextButtom(
+              iconLeft: const Icon(Icons.fiber_new),
+              iconRight: const Icon(Icons.arrow_forward_ios),
               labelTitle: 'Finance',
+              onPressed: () {},
             ),
             const Divider(),
-            const AppTextButtom(
-              iconLeft: Icon(Icons.fiber_new),
-              iconRight: Icon(Icons.arrow_forward_ios),
+            AppTextButtom(
+              iconLeft: const Icon(Icons.fiber_new),
+              iconRight: const Icon(Icons.arrow_forward_ios),
               labelTitle: 'Business',
+              onPressed: () {},
             ),
             const Divider(),
-            const AppTextButtom(
-              iconLeft: Icon(Icons.fiber_new),
-              iconRight: Icon(Icons.arrow_forward_ios),
+            AppTextButtom(
+              iconLeft: const Icon(Icons.fiber_new),
+              iconRight: const Icon(Icons.arrow_forward_ios),
               labelTitle: 'World',
+              onPressed: () {},
+            ),
+            const Divider(),
+            const Row(
+              children: [
+                Text('Follow'),
+              ],
+            ),
+            Row(
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: const Icon(Icons.facebook),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: const Icon(Icons.tiktok),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: const Icon(Icons.cast_for_education),
+                ),
+              ],
+            ),
+            Center(
+              child: TextButton(
+                onPressed: () {},
+                child: Container(
+                  height: 50,
+                  width: 300,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(30),
+                    color: Colors.brown,
+                  ),
+                  child: const Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Icon(
+                        Icons.message,
+                        color: Colors.white,
+                      ),
+                      Padding(padding: EdgeInsets.only(right: 10)),
+                      Text(
+                        'Respond to news',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ),
             const Divider(),
           ],

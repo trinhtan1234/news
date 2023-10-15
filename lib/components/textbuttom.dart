@@ -4,12 +4,14 @@ class AppTextButtom extends StatefulWidget {
   final Icon iconLeft;
   final String labelTitle;
   final Icon iconRight;
+  final VoidCallback onPressed;
 
   const AppTextButtom({
     super.key,
     required this.iconLeft,
     required this.iconRight,
     required this.labelTitle,
+    required this.onPressed,
   });
 
   @override
@@ -20,7 +22,7 @@ class _AppTextButtomState extends State<AppTextButtom> {
   @override
   Widget build(BuildContext context) {
     return TextButton(
-      onPressed: () {},
+      onPressed: widget.onPressed,
       child: Row(
         children: [
           Expanded(
