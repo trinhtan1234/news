@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news/login/screen_sign.dart';
 
 class ScreenLogin extends StatelessWidget {
   const ScreenLogin({super.key});
@@ -113,6 +114,7 @@ class ScreenLogin extends StatelessWidget {
                 ),
               ),
               const Padding(padding: EdgeInsets.only(top: 20)),
+              // ignore: sized_box_for_whitespace
               Container(
                 width: 300,
                 height: 50,
@@ -127,6 +129,7 @@ class ScreenLogin extends StatelessWidget {
                 ),
               ),
               const Padding(padding: EdgeInsets.only(top: 10)),
+              // ignore: sized_box_for_whitespace
               Container(
                 width: 300,
                 height: 50,
@@ -192,11 +195,17 @@ class ScreenLogin extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
+                  const Text(
                     'Do not have an account ?',
                   ),
                   TextButton(
-                      onPressed: () {}, child: const Text('Create acount'))
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const ScreenSign()));
+                      },
+                      child: const Text('Create acount'))
                 ],
               )
             ],
