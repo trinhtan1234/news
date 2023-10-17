@@ -24,12 +24,13 @@ class NewsBloc {
       StreamController<ImageModel>();
   Stream<ImageModel?> get imageAPIStream => _imageAPistreamController.stream;
 
-  Future getListNews() async {
-    // news = await _newsRepo.getNews();
-    // _newsStreamController.sink.add(news);
+  Future<void> getListNews() async {
+    news = await _newsRepo.getNews();
+    print(news);
+    _newsStreamController.sink.add(news);
   }
 
-  Future getImageAPI() async {
+  Future<void> getImageAPI() async {
     imageAPI = await _newsRepo.getImageAPI();
     print(imageAPI);
     _imageAPistreamController.sink.add(imageAPI);

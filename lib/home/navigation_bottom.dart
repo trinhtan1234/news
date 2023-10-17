@@ -21,15 +21,24 @@ class _ScreenNavigationBottomState extends State<ScreenNavigationBottom> {
   }
 
   final List<Widget> _pages = [
-    const ScreenTabBar(),
-    const ScreenYourNews(),
-    const ScreenMenu(),
+    Container(
+      child: const ScreenTabBar(),
+    ),
+    Container(
+      child: const ScreenYourNews(),
+    ),
+    Container(
+      child: const ScreenMenu(),
+    ),
+    //   child: const ScreenTabBar()),
+    // const ScreenYourNews(),
+    // const ScreenMenu(),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: _pages[_selectedIndex],
+      body: IndexedStack(index: _selectedIndex, children: _pages),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
         onTap: _navigateBottomBar,
