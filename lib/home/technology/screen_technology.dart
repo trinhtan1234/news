@@ -110,6 +110,7 @@ class _ListNewsTech extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print('URL to Image: ${newsTech.urlToImage}');
     return GestureDetector(
       onTap: () {},
       child: Container(
@@ -190,7 +191,22 @@ class _ListNewsTech extends StatelessWidget {
               ),
             ),
             if (newsTech.urlToImage != null && newsTech.urlToImage!.isNotEmpty)
-              const Padding(padding: EdgeInsets.only(top: 10)),
+              Expanded(
+                child: SizedBox(
+                  width: MediaQuery.of(context).size.width - 20,
+                  child: ClipRect(
+                    child: AspectRatio(
+                      aspectRatio: 16 / 9,
+                      child: Image(
+                        image: NetworkImage(newsTech.urlToImage ?? ''),
+                        fit: BoxFit.cover,
+                        width: MediaQuery.of(context).size.width - 20,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            const Padding(padding: EdgeInsets.only(top: 10)),
             // ignore: prefer_const_constructors
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
