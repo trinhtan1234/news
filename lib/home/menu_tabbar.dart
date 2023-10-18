@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news/home/myhompage.dart';
-
-import 'finance/screen_finance.dart';
+import 'package:news/home/technology/screen_technology.dart';
 
 class ScreenTabBar extends StatefulWidget {
   const ScreenTabBar({super.key});
@@ -12,11 +11,18 @@ class ScreenTabBar extends StatefulWidget {
 
 class _ScreenTabBarState extends State<ScreenTabBar>
     with SingleTickerProviderStateMixin {
-  late final TabController _tabController;
+  final int _selectedIndex = 0;
+
+  final List<Widget> _pages = [
+    const MyHomePage(),
+    const ScreenNewsTech(),
+  ];
+
+  late TabController _tabController;
 
   @override
   void initState() {
-    _tabController = TabController(length: 4, vsync: this);
+    _tabController = TabController(length: 2, vsync: this);
     super.initState();
   }
 
@@ -67,36 +73,32 @@ class _ScreenTabBarState extends State<ScreenTabBar>
               // icon: Icon(Icons.home),
             ),
             Tab(
-              text: 'Finance',
+              text: 'Technology',
               // icon: Icon(Icons.beach_access_sharp),
-            ),
-            Tab(
-              text: 'Business',
-              // icon: Icon(Icons.brightness_5_sharp),
-            ),
-            Tab(
-              text: 'World',
-              // icon: Icon(Icons.brightness_5_sharp),
             ),
           ],
         ),
       ),
-      body: TabBarView(
-        controller: _tabController,
-        children: const <Widget>[
-          Center(
-            child: MyHomePage(),
-          ),
-          Center(
-            child: ScreenFinance(),
-          ),
-          Center(
-            child: Text("It's sunny here"),
-          ),
-          Center(
-            child: Text("It's sunny here"),
-          ),
+      body: IndexedStack(
+        index: _selectedIndex,
+        children: [
+          TabBarView(
+            controller: _tabController,
+            children: _pages,
+          )
         ],
+        // child: TabBarView(
+        //   controller: _tabController,
+        //   children: const <Widget>[
+        //     Center(
+        //       child: MyHomePage(),
+        //     ),
+        //     Center(
+        //       child: ScreenNewsTech(),
+        //     ),
+
+        //   ],
+        // ),
       ),
     );
   }

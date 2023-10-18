@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '../menu/screen_menu.dart';
-import 'menu_tabbar.dart';
 import '../your_news/screen_your_news.dart';
+import 'menu_tabbar.dart';
 
 class ScreenNavigationBottom extends StatefulWidget {
   const ScreenNavigationBottom({super.key});
@@ -21,18 +21,9 @@ class _ScreenNavigationBottomState extends State<ScreenNavigationBottom> {
   }
 
   final List<Widget> _pages = [
-    Container(
-      child: const ScreenTabBar(),
-    ),
-    Container(
-      child: const ScreenYourNews(),
-    ),
-    Container(
-      child: const ScreenMenu(),
-    ),
-    //   child: const ScreenTabBar()),
-    // const ScreenYourNews(),
-    // const ScreenMenu(),
+    const ScreenTabBar(),
+    const ScreenYourNews(),
+    const ScreenMenu(),
   ];
 
   @override
