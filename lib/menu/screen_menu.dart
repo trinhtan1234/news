@@ -43,7 +43,7 @@ class ScreenMenu extends StatelessWidget {
               decoration: InputDecoration(
                 contentPadding: const EdgeInsets.symmetric(vertical: 10.0),
                 filled: true,
-                fillColor: Colors.grey,
+                // fillColor: Colors.grey,
                 hintText: 'Search...',
                 prefixIcon: const Icon(Icons.search),
                 border: OutlineInputBorder(

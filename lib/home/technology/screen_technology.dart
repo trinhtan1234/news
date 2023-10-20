@@ -110,7 +110,6 @@ class _ListNewsTech extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print('URL to Image: ${newsTech.urlToImage}');
     return GestureDetector(
       onTap: () {},
       child: Container(

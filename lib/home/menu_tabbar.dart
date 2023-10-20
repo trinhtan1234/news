@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:news/home/myhompage.dart';
+import 'package:news/home/screen_business.dart';
+import 'package:news/home/screen_sport.dart';
 import 'package:news/home/technology/screen_technology.dart';
 
 class ScreenTabBar extends StatefulWidget {
@@ -11,18 +13,11 @@ class ScreenTabBar extends StatefulWidget {
 
 class _ScreenTabBarState extends State<ScreenTabBar>
     with SingleTickerProviderStateMixin {
-  final int _selectedIndex = 0;
-
-  final List<Widget> _pages = [
-    const MyHomePage(),
-    const ScreenNewsTech(),
-  ];
-
   late TabController _tabController;
 
   @override
   void initState() {
-    _tabController = TabController(length: 2, vsync: this);
+    _tabController = TabController(length: 4, vsync: this);
     super.initState();
   }
 
@@ -76,29 +71,31 @@ class _ScreenTabBarState extends State<ScreenTabBar>
               text: 'Technology',
               // icon: Icon(Icons.beach_access_sharp),
             ),
+            Tab(
+              text: 'Business',
+              // icon: Icon(Icons.beach_access_sharp),
+            ),
+            Tab(
+              text: 'Sport',
+              // icon: Icon(Icons.beach_access_sharp),
+            ),
           ],
         ),
       ),
-      body: IndexedStack(
-        index: _selectedIndex,
-        children: [
-          TabBarView(
-            controller: _tabController,
-            children: _pages,
-          )
+      body: TabBarView(
+        controller: _tabController,
+        children: const <Widget>[
+          Center(
+            child: MyHomePage(),
+          ),
+          Center(
+            child: ScreenNewsTech(),
+          ),
+          Center(
+            child: ScreenBusiness(),
+          ),
+          Center(child: ScreenSport()),
         ],
-        // child: TabBarView(
-        //   controller: _tabController,
-        //   children: const <Widget>[
-        //     Center(
-        //       child: MyHomePage(),
-        //     ),
-        //     Center(
-        //       child: ScreenNewsTech(),
-        //     ),
-
-        //   ],
-        // ),
       ),
     );
   }

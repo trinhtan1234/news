@@ -149,20 +149,20 @@ class _ListNews extends StatelessWidget {
                         ),
                       ),
                     ),
-                    TextButton(
-                      onPressed: () {},
-                      child: const Row(
-                        children: [
-                          Icon(Icons.add),
-                          Text(
-                            'Follow',
-                            style: TextStyle(
-                                // color: Color.fromARGB(255, 63, 66, 69),
-                                fontWeight: FontWeight.bold),
-                          ),
-                        ],
-                      ),
-                    ),
+                    // TextButton(
+                    //   onPressed: () {},
+                    //   child: const Row(
+                    //     children: [
+                    //       Icon(Icons.add),
+                    //       Text(
+                    //         'Follow',
+                    //         style: TextStyle(
+                    //             // color: Color.fromARGB(255, 63, 66, 69),
+                    //             fontWeight: FontWeight.bold),
+                    //       ),
+                    //     ],
+                    //   ),
+                    // ),
                   ],
                 ),
                 subtitle: Column(
@@ -172,12 +172,13 @@ class _ListNews extends StatelessWidget {
                       children: [
                         Flexible(
                           child: Text(
-                            '${news.description}',
+                            '${news.content}',
                             maxLines: 2,
                           ),
                         ),
                       ],
                     ),
+                    const Padding(padding: EdgeInsets.only(top: 5)),
                     Row(
                       children: [
                         Row(
