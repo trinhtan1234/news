@@ -284,3 +284,87 @@ Flutter (3.13.5): C:\src\flutter (No device)
 [2:11:50 PM] [General] [Info] Took 3ms to filter out excluded projects (0 exclusion rules)
 [2:19:04 PM] [General] [Info] Took 21ms to search for projects (5 levels)
 [2:19:04 PM] [General] [Info] Took 2ms to filter out excluded projects (0 exclusion rules)
+[3:34:21 PM] [General] [Info] Starting debug session...
+[3:34:21 PM] [General] [Info]     workspace: D:\Flutter\news
+[3:34:21 PM] [General] [Info]     program  : D:\Flutter\news\lib\main.dart
+[3:34:21 PM] [General] [Info] Setting cwd based on likely entry point: D:\Flutter\news
+[3:34:21 PM] [General] [Info] Using workspace as cwd: D:\Flutter\news
+[3:34:21 PM] [General] [Info] Detected launch project as Flutter
+[3:34:21 PM] [General] [Info] Using Flutter debug adapter for this session
+[3:34:21 PM] [General] [Info] Getting DevTools server address to pass to Flutter...
+[3:34:21 PM] [General] [Info] Checking for errors before launching
+[3:34:21 PM] [General] [Info] Debug session starting...
+    {
+        "name": "Dart  (Pixel 6 Pro API 33)",
+        "noDebug": false,
+        "request": "launch",
+        "type": "dart",
+        "program": "D:\\Flutter\\news\\lib\\main.dart",
+        "dartCodeDebugSessionID": "session-e0be8",
+        "cwd": "D:\\Flutter\\news",
+        "deviceId": "emulator-5554",
+        "deviceName": "Pixel 6 Pro API 33 (android-x64)",
+        "toolEnv": {
+            "FLUTTER_HOST": "VSCode",
+            "PUB_ENVIRONMENT": "vscode.dart-code",
+            "FLUTTER_ROOT": "C:\\src\\flutter"
+        },
+        "sendLogsToClient": false,
+        "sendCustomProgressEvents": true,
+        "allowAnsiColorOutput": true,
+        "additionalProjectPaths": [
+            "D:\\Flutter\\news"
+        ],
+        "args": [],
+        "vmAdditionalArgs": [],
+        "toolArgs": [
+            "-d",
+            "emulator-5554",
+            "--devtools-server-address",
+            "http://127.0.0.1:9100/"
+        ],
+        "vmServicePort": 0,
+        "dartSdkPath": "C:\\src\\flutter\\bin\\cache\\dart-sdk",
+        "vmServiceLogFile": "D:\\Flutter\\news\\logs\\observatory.txt",
+        "maxLogLineLength": 2000,
+        "dartTestLogFile": "D:\\Flutter\\news\\logs\\dart_test.txt",
+        "debugSdkLibraries": false,
+        "debugExternalPackageLibraries": true,
+        "showDartDeveloperLogs": true,
+        "evaluateGettersInDebugViews": true,
+        "evaluateToStringInDebugViews": true,
+        "flutterSdkPath": "C:\\src\\flutter",
+        "useInspectorNotificationsForWidgetErrors": true,
+        "flutterRunLogFile": "D:\\Flutter\\news\\logs\\flutter_run.txt",
+        "flutterTestLogFile": "D:\\Flutter\\news\\logs\\flutter_test.txt",
+        "showMemoryUsage": false,
+        "debuggerType": 2
+    }
+[3:34:21 PM] [General] [Info] Using flutter debugger for Flutter
+[3:34:21 PM] [General] [Info] SDK DAP setting is true, set by sdkDaps experiment
+[3:34:21 PM] [General] [Info] Running SDK DAP Dart VM in undefined: C:\src\flutter\bin\flutter.bat debug_adapter and options {"env":{"FLUTTER_HOST":"VSCode","PUB_ENVIRONMENT":"vscode.dart-code","FLUTTER_ROOT":"C:\\src\\flutter"}}
+[3:34:21 PM] [General] [Info] Did not find session ea3eccee-9d78-4ae9-bbb2-254ec8545def to handle dart.progressStart. There were 0 sessions:
+[3:34:21 PM] [General] [Info] Event will be queued and processed when the session start event fires
+[3:34:21 PM] [General] [Info] Processing delayed event dart.progressStart for session ea3eccee-9d78-4ae9-bbb2-254ec8545def
+[3:34:35 PM] [General] [Info] Exposing URL: ws://127.0.0.1:60852/1WS6CWZhkCs%3D/ws
+[3:34:35 PM] [General] [Info] Mapping URI: http://127.0.0.1:60852/1WS6CWZhkCs%3D/ws
+[3:34:35 PM] [General] [Info] Mapped URI: http://127.0.0.1:60852/1WS6CWZhkCs%3D/ws
+[3:34:35 PM] [General] [Info] Mapped URL: http://127.0.0.1:60852/1WS6CWZhkCs%3D/ws
+[3:34:35 PM] [General] [Info] Final URL: ws://127.0.0.1:60852/1WS6CWZhkCs=/ws
+[3:34:35 PM] [General] [Info] Took 29ms to search for projects (5 levels)
+[3:34:35 PM] [General] [Info] Took 1ms to filter out excluded projects (0 exclusion rules)
+[3:58:07 PM] [General] [Info] Took 37ms to search for projects (5 levels)
+[3:58:07 PM] [General] [Info] Took 2ms to filter out excluded projects (0 exclusion rules)
+[4:47:33 PM] [General] [Info] Took 30ms to search for projects (5 levels)
+[4:47:33 PM] [General] [Info] Took 2ms to filter out excluded projects (0 exclusion rules)
+[4:53:16 PM] [General] [Info] Took 35ms to search for projects (5 levels)
+[4:53:16 PM] [General] [Info] Took 1ms to filter out excluded projects (0 exclusion rules)
+[5:02:23 PM] [General] [Info] Took 29ms to search for projects (5 levels)
+[5:02:23 PM] [General] [Info] Took 1ms to filter out excluded projects (0 exclusion rules)
+[5:04:49 PM] [General] [Info] Returning cached results for project search
+[5:11:02 PM] [General] [Info] Took 31ms to search for projects (5 levels)
+[5:11:02 PM] [General] [Info] Took 2ms to filter out excluded projects (0 exclusion rules)
+[5:18:39 PM] [General] [Info] Took 20ms to search for projects (5 levels)
+[5:18:39 PM] [General] [Info] Took 2ms to filter out excluded projects (0 exclusion rules)
+[5:18:39 PM] [General] [Info] Checking 1 projects for supported platforms
+[5:18:39 PM] [General] [Info] Supported platforms for the workspace are linux, macos, windows, ios, android, web

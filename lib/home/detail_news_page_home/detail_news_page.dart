@@ -14,77 +14,84 @@ class ScreenDetailNews extends StatelessWidget {
           news.title ?? 'No Title',
         ),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Expanded(
-              child: Column(
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                '${news.publishedAt ?? 'Unknown data'}',
+                style: const TextStyle(
+                  fontStyle: FontStyle.italic,
+                  color: Colors.grey,
+                ),
+              ),
+              Row(
                 children: [
-                  Text(
-                    news.title ?? 'No Title',
-                    style: const TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 24.0,
-                    ),
-                  ),
-                  const SizedBox(height: 10),
-                  Text(
-                    news.description ?? 'No Description',
-                    style: const TextStyle(fontSize: 16.0),
-                  ),
-                  const SizedBox(height: 10),
-                  Text(
-                    'Published at: ${news.publishedAt ?? 'Unknown data'}',
-                    style: const TextStyle(
-                      fontStyle: FontStyle.italic,
-                      color: Colors.grey,
-                    ),
-                  ),
-                  const SizedBox(height: 10),
-                  if (news.urlToImage != null && news.urlToImage!.isNotEmpty)
-                    AspectRatio(
-                      aspectRatio: 16 / 9,
-                      child: Image.network(
-                        news.urlToImage!,
-                        fit: BoxFit.cover,
+                  Flexible(
+                    child: Text(
+                      news.title ?? 'No Title',
+                      style: const TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 24.0,
                       ),
                     ),
-                  Row(
-                    children: [
-                      Flexible(
-                        child: Text(news.content ?? 'No content'),
-                      ),
-                    ],
-                  ),
-                  const Padding(padding: EdgeInsets.only(top: 40)),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      Text(
-                        news.author ?? 'No author',
-                        style: const TextStyle(fontWeight: FontWeight.bold),
-                      ),
-                    ],
                   ),
                 ],
               ),
-            ),
-            TextField(
-              decoration: const InputDecoration(
-                contentPadding: EdgeInsets.symmetric(vertical: 10.0),
-                filled: true,
-                // fillColor: Colors.grey,
-                hintText: 'Your idea...',
-                prefixIcon: Icon(Icons.search),
-                // border: OutlineInputBorder(
-                //   borderRadius: BorderRadius.circular(10),
-                // ),
+              if (news.urlToImage != null && news.urlToImage!.isNotEmpty)
+                SizedBox(
+                  height: 300,
+                  child: AspectRatio(
+                    aspectRatio: 4 / 3,
+                    child: Image.network(
+                      news.urlToImage!,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ),
+              const SizedBox(height: 10),
+              Text(
+                news.description ?? 'No Description',
+                style: const TextStyle(fontSize: 16.0),
               ),
-              onChanged: (text) {},
-            ),
-          ],
+              const SizedBox(height: 10),
+              const SizedBox(height: 10),
+              Row(
+                children: [
+                  Flexible(
+                    child: Text(news.content ?? 'No content'),
+                  ),
+                ],
+              ),
+              const Padding(padding: EdgeInsets.only(top: 40)),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Text(
+                    news.author ?? 'No author',
+                    style: const TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                ],
+              ),
+              const Padding(padding: EdgeInsets.only(top: 20)),
+              TextField(
+                decoration: const InputDecoration(
+                  contentPadding: EdgeInsets.symmetric(vertical: 10.0),
+                  filled: true,
+                  // fillColor: Colors.grey,
+                  hintText: 'Your idea...',
+                  // prefixIcon: Icon(Icons.voice_chat_sharp),
+
+                  // border: OutlineInputBorder(
+                  //   borderRadius: BorderRadius.circular(10),
+                  // ),
+                ),
+                onChanged: (text) {},
+              ),
+            ],
+          ),
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(

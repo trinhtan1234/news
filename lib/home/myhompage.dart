@@ -221,8 +221,8 @@ class _ListNews extends StatelessWidget {
             // ignore: prefer_const_constructors
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: const [
-                Row(
+              children: [
+                const Row(
                   children: [
                     Text(
                       'News',
@@ -230,15 +230,32 @@ class _ListNews extends StatelessWidget {
                     ),
                   ],
                 ),
-                Row(
-                  children: [
-                    Icon(Icons.mark_chat_read_outlined),
-                    Padding(padding: EdgeInsets.only(right: 15)),
-                    Text(
-                      '22',
-                      style: TextStyle(color: Colors.red),
-                    ),
-                  ],
+                TextButton(
+                  onPressed: () {
+                    showModalBottomSheet(
+                        context: context,
+                        shape: const RoundedRectangleBorder(
+                            borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(20),
+                          topRight: Radius.circular(20),
+                        )),
+                        builder: ((context) {
+                          return Container(
+                            height: 700,
+                            color: Colors.blue,
+                          );
+                        }));
+                  },
+                  child: const Row(
+                    children: [
+                      Icon(Icons.mark_chat_read_outlined),
+                      Padding(padding: EdgeInsets.only(right: 15)),
+                      Text(
+                        '22',
+                        style: TextStyle(color: Colors.red),
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),
