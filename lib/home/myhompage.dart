@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:news/home/bloc/news_bloc.dart';
 import 'package:news/networking/models/newsmodel.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
@@ -233,18 +234,48 @@ class _ListNews extends StatelessWidget {
                 TextButton(
                   onPressed: () {
                     showModalBottomSheet(
-                        context: context,
-                        shape: const RoundedRectangleBorder(
-                            borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(20),
-                          topRight: Radius.circular(20),
-                        )),
-                        builder: ((context) {
-                          return Container(
-                            height: 700,
-                            color: Colors.blue,
-                          );
-                        }));
+                      context: context,
+                      isScrollControlled: true,
+                      shape: const RoundedRectangleBorder(
+                          borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(20),
+                        topRight: Radius.circular(20),
+                      )),
+                      builder: ((context) {
+                        return LayoutBuilder(
+                          builder: (context, Constraints) {
+                              double screenHeight = MediaQuery.of(context).size.height;
+                              double textHeight = 20 * 4;
+                              double minHeight = 
+                          },
+                        )
+                       
+                        return SingleChildScrollView(
+                          child: Container(
+                            height: bottomSheetHeight,
+                            margin: const EdgeInsets.all(16),
+                            child: Padding(
+                              padding: const EdgeInsets.all(10),
+                              child: Scaffold(
+                                appBar: AppBar(
+                                  title: const Text('a'),
+                                ),
+                                body: const SingleChildScrollView(
+                                  child: Column(
+                                    children: [
+                                      Text('abc'),
+                                      Text('abc'),
+                                      Text('abc'),
+                                      Text('abc'),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        );
+                      }),
+                    );
                   },
                   child: const Row(
                     children: [
