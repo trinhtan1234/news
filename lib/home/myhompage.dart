@@ -233,49 +233,86 @@ class _ListNews extends StatelessWidget {
                 TextButton(
                   onPressed: () {
                     showModalBottomSheet(
-                        context: context,
-                        isScrollControlled: true,
-                        shape: const RoundedRectangleBorder(
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(20),
-                            topRight: Radius.circular(20),
-                          ),
+                      context: context,
+                      isScrollControlled: true,
+                      shape: const RoundedRectangleBorder(
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(20),
+                          topRight: Radius.circular(20),
                         ),
-                        builder: ((context) {
-                          return LayoutBuilder(builder: (context, Constraints) {
-                            double screenHeight =
-                                MediaQuery.of(context).size.height;
-                            double textHeight = 20 * 4;
-                            double minHeight = textHeight;
-                            double maxHeight = screenHeight * 0.9;
-                            double bottomSheetHeight =
-                                minHeight > maxHeight ? maxHeight : minHeight;
-                            return SingleChildScrollView(
-                              child: Container(
-                                height: bottomSheetHeight,
-                                margin: const EdgeInsets.all(16),
-                                child: Padding(
-                                  padding: const EdgeInsets.all(10),
-                                  child: Scaffold(
-                                    appBar: AppBar(
-                                      title: Text('${news.title}'),
-                                    ),
-                                    body: const SingleChildScrollView(
-                                      child: Column(
-                                        children: [
-                                          Text('abcdhasdakj'),
-                                          Text('abc'),
-                                          Text('abc'),
-                                          Text('abc'),
-                                        ],
-                                      ),
-                                    ),
+                      ),
+                      builder: ((context) {
+                        // ignore: non_constant_identifier_names
+                        return LayoutBuilder(builder: (context, Constraints) {
+                          double screenHeight =
+                              MediaQuery.of(context).size.height;
+                          double minHeight = 50;
+                          double maxHeight = screenHeight * 0.9;
+                          double bottomSheetHeight =
+                              minHeight > maxHeight ? minHeight : maxHeight;
+                          return Container(
+                            height: bottomSheetHeight,
+                            margin: const EdgeInsets.all(16),
+                            child: Scaffold(
+                              appBar: AppBar(
+                                title: Expanded(
+                                  child: Text(
+                                    '${news.title}',
+                                    style: const TextStyle(
+                                        fontWeight: FontWeight.bold),
                                   ),
                                 ),
                               ),
-                            );
-                          });
-                        }));
+                              body: SingleChildScrollView(
+                                child: Column(
+                                  children: [
+                                    const Row(
+                                      children: [
+                                        Text(
+                                          'Ý kiến',
+                                          style: TextStyle(
+                                              fontWeight: FontWeight.bold),
+                                        ),
+                                      ],
+                                    ),
+
+                                    const Divider(),
+
+                                    Row(
+                                      children: [
+                                        Expanded(
+                                          child: Text(
+                                            '${news.content}',
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+
+                                    const Divider(),
+                                    // AppBar(
+                                    //   bottom: PreferredSize(
+                                    //     preferredSize:
+                                    //         const Size.fromHeight(60),
+                                    //     child: Padding(
+                                    //       padding: const EdgeInsets.all(8),
+                                    //       child: TextField(
+                                    //         decoration: const InputDecoration(
+                                    //           hintText: 'Comment',
+                                    //           border: OutlineInputBorder(),
+                                    //         ),
+                                    //         onChanged: (value) {},
+                                    //       ),
+                                    //     ),
+                                    //   ),
+                                    // ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          );
+                        });
+                      }),
+                    );
                   },
                   child: const Row(
                     children: [
