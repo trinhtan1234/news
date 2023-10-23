@@ -4,7 +4,7 @@ import 'package:news/networking/models/newsmodel.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 import 'package:skeletons/skeletons.dart';
 
-import 'detail_news_page_home/detail_news_page.dart';
+import 'detail_news_page.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
@@ -234,90 +234,112 @@ class _ListNews extends StatelessWidget {
                   onPressed: () {
                     showModalBottomSheet(
                       context: context,
-                      isScrollControlled: true,
-                      shape: const RoundedRectangleBorder(
-                        borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(20),
-                          topRight: Radius.circular(20),
-                        ),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(0),
                       ),
-                      builder: ((context) {
-                        // ignore: non_constant_identifier_names
-                        return LayoutBuilder(builder: (context, Constraints) {
-                          double screenHeight =
-                              MediaQuery.of(context).size.height;
-                          double minHeight = 50;
-                          double maxHeight = screenHeight * 0.9;
-                          double bottomSheetHeight =
-                              minHeight > maxHeight ? minHeight : maxHeight;
-                          return Container(
-                            height: bottomSheetHeight,
-                            margin: const EdgeInsets.all(16),
-                            child: Scaffold(
-                              appBar: AppBar(
-                                title: Expanded(
+                      builder: (context) {
+                        return SingleChildScrollView(
+                          child: Column(
+                            children: [
+                              Container(
+                                // margin: const EdgeInsets.only(),
+                                height: 50,
+                                child: Flexible(
                                   child: Text(
                                     '${news.title}',
+                                    softWrap: true,
                                     style: const TextStyle(
                                         fontWeight: FontWeight.bold),
+                                    // overflow: TextOverflow.ellipsis,
                                   ),
                                 ),
                               ),
-                              body: SingleChildScrollView(
+                              const Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    'Ý Kiến',
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              const Divider(),
+                              Container(
                                 child: Column(
                                   children: [
-                                    const Row(
-                                      children: [
-                                        Text(
-                                          'Ý kiến',
-                                          style: TextStyle(
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      ],
-                                    ),
-
-                                    const Divider(),
-
                                     Row(
                                       children: [
-                                        Expanded(
+                                        const Icon(Icons.person_3),
+                                        Flexible(
                                           child: Text(
-                                            '${news.content}',
+                                            '${news.author}',
+                                            softWrap: true,
                                           ),
                                         ),
                                       ],
                                     ),
-
+                                    Text('${news.content}'),
                                     const Divider(),
-                                    // AppBar(
-                                    //   bottom: PreferredSize(
-                                    //     preferredSize:
-                                    //         const Size.fromHeight(60),
-                                    //     child: Padding(
-                                    //       padding: const EdgeInsets.all(8),
-                                    //       child: TextField(
-                                    //         decoration: const InputDecoration(
-                                    //           hintText: 'Comment',
-                                    //           border: OutlineInputBorder(),
-                                    //         ),
-                                    //         onChanged: (value) {},
-                                    //       ),
-                                    //     ),
-                                    //   ),
-                                    // ),
+                                    Row(
+                                      children: [
+                                        const Icon(Icons.person_3),
+                                        Flexible(
+                                          child: Text(
+                                            '${news.author}',
+                                            softWrap: true,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    Text('${news.content}'),
                                   ],
                                 ),
                               ),
-                            ),
-                          );
-                        });
-                      }),
+                              const Divider(),
+                              Container(
+                                child: Column(
+                                  children: [
+                                    Row(
+                                      children: [
+                                        const Icon(Icons.person_3),
+                                        Flexible(
+                                          child: Text(
+                                            '${news.author}',
+                                            softWrap: true,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    Text('${news.content}'),
+                                    const Divider(),
+                                    Row(
+                                      children: [
+                                        const Icon(Icons.person_3),
+                                        Flexible(
+                                          child: Text(
+                                            '${news.author}',
+                                            softWrap: true,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    Text('${news.content}'),
+                                  ],
+                                ),
+                              ),
+                              const Divider(),
+                            ],
+                          ),
+                        );
+                      },
                     );
                   },
                   child: const Row(
                     children: [
                       Icon(Icons.mark_chat_read_outlined),
-                      Padding(padding: EdgeInsets.only(right: 15)),
+                      Padding(padding: EdgeInsets.only(right: 5)),
                       Text(
                         '22',
                         style: TextStyle(color: Colors.red),
