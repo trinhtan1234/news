@@ -1,15 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:news/components/custom_container.dart';
+import 'package:news/networking/models/newsmodel.dart';
 
-class ScreenYourNews extends StatefulWidget {
-  const ScreenYourNews({super.key});
+class ScreenYourNews extends StatelessWidget {
+  final Article news;
 
-  @override
-  State<ScreenYourNews> createState() => _ScreenYourNewsState();
-}
+  const ScreenYourNews({super.key, required this.news});
 
-class _ScreenYourNewsState extends State<ScreenYourNews> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: AppContainer(
+        title: news.title,
+        content: news.content,
+        publishedAt: news.publishedAt?.toString(),
+        newstype: 'news',
+        urlToImage: news.urlToImage ?? '',
+      ),
+    );
   }
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news/components/textbuttom.dart';
-import 'package:news/login/screen_login.dart';
+import 'package:news/menu/login/screen_login.dart';
 
 class ScreenMenu extends StatelessWidget {
   const ScreenMenu({super.key});

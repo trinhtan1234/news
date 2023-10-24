@@ -181,20 +181,16 @@ class _ListNews extends StatelessWidget {
                     const Padding(padding: EdgeInsets.only(top: 5)),
                     Row(
                       children: [
-                        Row(
-                          children: [
-                            const Icon(
-                              Icons.public,
-                              size: 15,
-                            ),
-                            Text(
-                              '${news.publishedAt}',
-                              style: const TextStyle(
-                                fontStyle: FontStyle.italic,
-                              ),
-                            ),
-                          ],
-                        )
+                        const Icon(
+                          Icons.public,
+                          size: 15,
+                        ),
+                        Text(
+                          '${news.publishedAt}',
+                          style: const TextStyle(
+                            fontStyle: FontStyle.italic,
+                          ),
+                        ),
                       ],
                     ),
                   ],
@@ -241,7 +237,7 @@ class _ListNews extends StatelessWidget {
                         return SingleChildScrollView(
                           child: Column(
                             children: [
-                              Container(
+                              SizedBox(
                                 // margin: const EdgeInsets.only(),
                                 height: 50,
                                 child: Flexible(
@@ -266,68 +262,64 @@ class _ListNews extends StatelessWidget {
                                 ],
                               ),
                               const Divider(),
-                              Container(
-                                child: Column(
-                                  children: [
-                                    Row(
-                                      children: [
-                                        const Icon(Icons.person_3),
-                                        Flexible(
-                                          child: Text(
-                                            '${news.author}',
-                                            softWrap: true,
-                                          ),
+                              Column(
+                                children: [
+                                  Row(
+                                    children: [
+                                      const Icon(Icons.person_3),
+                                      Flexible(
+                                        child: Text(
+                                          '${news.author}',
+                                          softWrap: true,
                                         ),
-                                      ],
-                                    ),
-                                    Text('${news.content}'),
-                                    const Divider(),
-                                    Row(
-                                      children: [
-                                        const Icon(Icons.person_3),
-                                        Flexible(
-                                          child: Text(
-                                            '${news.author}',
-                                            softWrap: true,
-                                          ),
+                                      ),
+                                    ],
+                                  ),
+                                  Text('${news.content}'),
+                                  const Divider(),
+                                  Row(
+                                    children: [
+                                      const Icon(Icons.person_3),
+                                      Flexible(
+                                        child: Text(
+                                          '${news.author}',
+                                          softWrap: true,
                                         ),
-                                      ],
-                                    ),
-                                    Text('${news.content}'),
-                                  ],
-                                ),
+                                      ),
+                                    ],
+                                  ),
+                                  Text('${news.content}'),
+                                ],
                               ),
                               const Divider(),
-                              Container(
-                                child: Column(
-                                  children: [
-                                    Row(
-                                      children: [
-                                        const Icon(Icons.person_3),
-                                        Flexible(
-                                          child: Text(
-                                            '${news.author}',
-                                            softWrap: true,
-                                          ),
+                              Column(
+                                children: [
+                                  Row(
+                                    children: [
+                                      const Icon(Icons.person_3),
+                                      Flexible(
+                                        child: Text(
+                                          '${news.author}',
+                                          softWrap: true,
                                         ),
-                                      ],
-                                    ),
-                                    Text('${news.content}'),
-                                    const Divider(),
-                                    Row(
-                                      children: [
-                                        const Icon(Icons.person_3),
-                                        Flexible(
-                                          child: Text(
-                                            '${news.author}',
-                                            softWrap: true,
-                                          ),
+                                      ),
+                                    ],
+                                  ),
+                                  Text('${news.content}'),
+                                  const Divider(),
+                                  Row(
+                                    children: [
+                                      const Icon(Icons.person_3),
+                                      Flexible(
+                                        child: Text(
+                                          '${news.author}',
+                                          softWrap: true,
                                         ),
-                                      ],
-                                    ),
-                                    Text('${news.content}'),
-                                  ],
-                                ),
+                                      ),
+                                    ],
+                                  ),
+                                  Text('${news.content}'),
+                                ],
                               ),
                               const Divider(),
                             ],

@@ -5,7 +5,7 @@ import 'package:news/home/screen_sport.dart';
 import 'package:news/home/technology/screen_technology.dart';
 
 class ScreenTabBar extends StatefulWidget {
-  const ScreenTabBar({super.key});
+  const ScreenTabBar({Key? key}) : super(key: key);
 
   @override
   State<ScreenTabBar> createState() => _ScreenTabBarState();
@@ -82,19 +82,24 @@ class _ScreenTabBarState extends State<ScreenTabBar>
           ],
         ),
       ),
-      body: TabBarView(
-        controller: _tabController,
-        children: const <Widget>[
-          Center(
-            child: MyHomePage(),
+      body: IndexedStack(
+        index: 0,
+        children: [
+          TabBarView(
+            controller: _tabController,
+            children: const <Widget>[
+              Center(
+                child: MyHomePage(),
+              ),
+              Center(
+                child: ScreenNewsTech(),
+              ),
+              Center(
+                child: ScreenBusiness(),
+              ),
+              Center(child: ScreenSport()),
+            ],
           ),
-          Center(
-            child: ScreenNewsTech(),
-          ),
-          Center(
-            child: ScreenBusiness(),
-          ),
-          Center(child: ScreenSport()),
         ],
       ),
     );

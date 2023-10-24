@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news/networking/models/newsmodel.dart';
 
 import '../menu/screen_menu.dart';
 import '../your_news/screen_your_news.dart';
@@ -14,17 +15,28 @@ class ScreenNavigationBottom extends StatefulWidget {
 class _ScreenNavigationBottomState extends State<ScreenNavigationBottom> {
   int _selectedIndex = 0;
 
+  late final Article news;
+
   void _navigateBottomBar(int index) {
     setState(() {
       _selectedIndex = index;
     });
   }
 
-  final List<Widget> _pages = [
-    const ScreenTabBar(),
-    const ScreenYourNews(),
-    const ScreenMenu(),
-  ];
+  @override
+  void initState() {
+    super.initState();
+    news = Article();
+    _pages = [
+      const ScreenTabBar(),
+      ScreenYourNews(
+        news: news,
+      ),
+      const ScreenMenu(),
+    ];
+  }
+
+  List<Widget> _pages = [];
 
   @override
   Widget build(BuildContext context) {
