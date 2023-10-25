@@ -29,9 +29,7 @@ class _ScreenNavigationBottomState extends State<ScreenNavigationBottom> {
     news = Article();
     _pages = [
       const ScreenTabBar(),
-      ScreenYourNews(
-        news: news,
-      ),
+      const ScreenYourNews(),
       const ScreenMenu(),
     ];
   }

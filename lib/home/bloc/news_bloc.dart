@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:news/networking/models/model_newstech.dart';
+import 'package:news/networking/models/model_yournews.dart';
 import 'package:news/networking/models/newsmodel.dart';
 import 'package:news/networking/responsitories/news_responsitory.dart';
 
@@ -9,6 +10,7 @@ class NewsBloc {
 
   NewsModel? news;
   ModelNewsTech? newsTech;
+  ModelYourNews? yourNews;
 
   final StreamController<NewsModel?> _newsStreamController =
       StreamController<NewsModel>();
@@ -17,6 +19,10 @@ class NewsBloc {
   final StreamController<ModelNewsTech?> _newsTechStreamController =
       StreamController<ModelNewsTech>();
   Stream<ModelNewsTech?> get newsTechStream => _newsTechStreamController.stream;
+
+  final StreamController<ModelYourNews?> _newsYourStreamController =
+      StreamController<ModelYourNews>();
+  Stream<ModelYourNews?> get newsYourStream => _newsYourStreamController.stream;
 
   Future<void> getListNews() async {
     news = await _newsRepo.getNews();
@@ -28,8 +34,14 @@ class NewsBloc {
     _newsTechStreamController.sink.add(newsTech);
   }
 
+  Future<void> getListYourNew() async {
+    yourNews = await _newsRepo.getYourNews();
+    _newsYourStreamController.sink.add(yourNews);
+  }
+
   void dispose() {
     _newsStreamController.close();
     _newsTechStreamController.close();
+    _newsYourStreamController.close();
   }
 }

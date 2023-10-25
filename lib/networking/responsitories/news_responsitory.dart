@@ -38,7 +38,10 @@ class NewsRepository {
       final response = await _server.request(UrlApp.getYourNews);
       final dataResponse = response?.data;
       if (dataResponse != null) {
-        return ModelYourNews.fromJson(dataResponse);
+        if (dataResponse is List) {
+          final listData = dataResponse.cast<Map<String, dynamic>>();
+          return ModelYourNews.fromJson(listData as Map<String, dynamic>);
+        }
       }
       return null;
     } catch (e) {
