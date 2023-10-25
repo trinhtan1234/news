@@ -105,229 +105,38 @@ class _ScreenYourNewsState extends State<ScreenYourNews> {
                     return Column(
                       children: [
                         Container(
-                          decoration: const BoxDecoration(
-                            color: Colors.white60,
-                            border: Border(
-                              top: BorderSide(width: 0.5),
-                            ),
-                          ),
-                          margin: const EdgeInsets.all(10),
-                          height: 400,
+                          // color: Colors.grey,
+                          margin: const EdgeInsets.only(right: 10, left: 10),
                           child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: [
-                              // ignore: avoid_unnecessary_containers
-                              Container(
-                                child: ListTile(
-                                  title: Row(
-                                    children: [
-                                      Flexible(
-                                        child: Text(
-                                          '${listNews[index].tieuDe}',
-                                          style: const TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            // color: Colors.brown,
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  subtitle: Column(
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    children: [
-                                      Row(
-                                        children: [
-                                          Text(
-                                              '${listNews[index].tinhThanhPho}'),
-                                          Flexible(
-                                            child: Text(
-                                              '${listNews[index].content}',
-                                              maxLines: 2,
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                      const Padding(
-                                          padding: EdgeInsets.only(top: 5)),
-                                      Row(
-                                        children: [
-                                          const Icon(
-                                            Icons.public,
-                                            size: 15,
-                                          ),
-                                          Text(
-                                            '${listNews[index].tieuDe}',
-                                            style: const TextStyle(
-                                              fontStyle: FontStyle.italic,
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                              if (listNews[index].imageTieuDe != null &&
-                                  listNews[index].imageTieuDe!.isNotEmpty)
-                                Expanded(
-                                  child: SizedBox(
-                                    width:
-                                        MediaQuery.of(context).size.width - 20,
-                                    child: ClipRect(
-                                      child: AspectRatio(
-                                        aspectRatio: 16 / 9,
-                                        child: Image(
-                                          image: NetworkImage(
-                                              listNews[index].imageTieuDe ??
-                                                  ''),
-                                          fit: BoxFit.cover,
-                                          width: MediaQuery.of(context)
-                                                  .size
-                                                  .width -
-                                              20,
-                                        ),
+                              Row(
+                                children: [
+                                  Flexible(
+                                    child: Text(
+                                      '${listNews[index].tieuDe}',
+                                      style: const TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20,
                                       ),
                                     ),
                                   ),
-                                ),
-                              const Padding(padding: EdgeInsets.only(top: 10)),
-                              // ignore: prefer_const_constructors
+                                ],
+                              ),
                               Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
                                 children: [
-                                  const Row(
-                                    children: [
-                                      Text(
-                                        'News',
-                                        style: TextStyle(fontSize: 15),
+                                  Flexible(
+                                    child: Text.rich(
+                                      TextSpan(
+                                        children: <InlineSpan>[
+                                          TextSpan(
+                                            text:
+                                                '${listNews[index].tinhThanhPho}: ',
+                                          ),
+                                          TextSpan(
+                                            text: '${listNews[index].content}',
+                                          ),
+                                        ],
                                       ),
-                                    ],
-                                  ),
-                                  TextButton(
-                                    onPressed: () {
-                                      showModalBottomSheet(
-                                        context: context,
-                                        shape: RoundedRectangleBorder(
-                                          borderRadius:
-                                              BorderRadius.circular(0),
-                                        ),
-                                        builder: (context) {
-                                          return SingleChildScrollView(
-                                            child: Column(
-                                              children: [
-                                                SizedBox(
-                                                  // margin: const EdgeInsets.only(),
-                                                  height: 50,
-                                                  child: Flexible(
-                                                    child: Text(
-                                                      '${listNews[index].content}',
-                                                      softWrap: true,
-                                                      style: const TextStyle(
-                                                          fontWeight:
-                                                              FontWeight.bold),
-                                                      // overflow: TextOverflow.ellipsis,
-                                                    ),
-                                                  ),
-                                                ),
-                                                const Row(
-                                                  mainAxisAlignment:
-                                                      MainAxisAlignment.start,
-                                                  children: [
-                                                    Text(
-                                                      'Ý Kiến',
-                                                      style: TextStyle(
-                                                        fontWeight:
-                                                            FontWeight.bold,
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                                const Divider(),
-                                                Column(
-                                                  children: [
-                                                    Row(
-                                                      children: [
-                                                        const Icon(
-                                                            Icons.person_3),
-                                                        Flexible(
-                                                          child: Text(
-                                                            '${listNews[index].content}',
-                                                            softWrap: true,
-                                                          ),
-                                                        ),
-                                                      ],
-                                                    ),
-                                                    Text(
-                                                        '${listNews[index].content}'),
-                                                    const Divider(),
-                                                    Row(
-                                                      children: [
-                                                        const Icon(
-                                                            Icons.person_3),
-                                                        Flexible(
-                                                          child: Text(
-                                                            '${listNews[index].content}',
-                                                            softWrap: true,
-                                                          ),
-                                                        ),
-                                                      ],
-                                                    ),
-                                                    Text(
-                                                        '${listNews[index].content}'),
-                                                  ],
-                                                ),
-                                                const Divider(),
-                                                Column(
-                                                  children: [
-                                                    Row(
-                                                      children: [
-                                                        const Icon(
-                                                            Icons.person_3),
-                                                        Flexible(
-                                                          child: Text(
-                                                            '${listNews[index].content}',
-                                                            softWrap: true,
-                                                          ),
-                                                        ),
-                                                      ],
-                                                    ),
-                                                    Text(
-                                                        '${listNews[index].content}'),
-                                                    const Divider(),
-                                                    Row(
-                                                      children: [
-                                                        const Icon(
-                                                            Icons.person_3),
-                                                        Flexible(
-                                                          child: Text(
-                                                            '${listNews[index].content}',
-                                                            softWrap: true,
-                                                          ),
-                                                        ),
-                                                      ],
-                                                    ),
-                                                    Text(
-                                                        '${listNews[index].content}'),
-                                                  ],
-                                                ),
-                                                const Divider(),
-                                              ],
-                                            ),
-                                          );
-                                        },
-                                      );
-                                    },
-                                    child: const Row(
-                                      children: [
-                                        Icon(Icons.mark_chat_read_outlined),
-                                        Padding(
-                                            padding: EdgeInsets.only(right: 5)),
-                                        Text(
-                                          '22',
-                                          style: TextStyle(color: Colors.red),
-                                        ),
-                                      ],
                                     ),
                                   ),
                                 ],
