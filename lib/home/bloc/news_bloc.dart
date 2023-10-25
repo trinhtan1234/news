@@ -10,7 +10,7 @@ class NewsBloc {
 
   NewsModel? news;
   ModelNewsTech? newsTech;
-  ModelYourNews? yourNews;
+  List<ModelYourNews>? yourNews;
 
   final StreamController<NewsModel?> _newsStreamController =
       StreamController<NewsModel>();
@@ -20,9 +20,10 @@ class NewsBloc {
       StreamController<ModelNewsTech>();
   Stream<ModelNewsTech?> get newsTechStream => _newsTechStreamController.stream;
 
-  final StreamController<ModelYourNews?> _newsYourStreamController =
-      StreamController<ModelYourNews>();
-  Stream<ModelYourNews?> get newsYourStream => _newsYourStreamController.stream;
+  final StreamController<List<ModelYourNews>?> _newsYourStreamController =
+      StreamController<List<ModelYourNews>?>();
+  Stream<List<ModelYourNews>?> get newsYourStream =>
+      _newsYourStreamController.stream;
 
   Future<void> getListNews() async {
     news = await _newsRepo.getNews();
@@ -35,7 +36,7 @@ class NewsBloc {
   }
 
   Future<void> getListYourNew() async {
-    yourNews = await _newsRepo.getYourNews();
+    yourNews = (await _newsRepo.getYourNews());
     _newsYourStreamController.sink.add(yourNews);
   }
 

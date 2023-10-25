@@ -1,11 +1,10 @@
 import 'dart:convert';
 
-// ignore: non_constant_identifier_names
-ModelYourNews ModelYourNewsFromJson(Map<String, dynamic> data) =>
-    ModelYourNews.fromJson(data);
+List<ModelYourNews> modelYourNewsFromJson(List listData) =>
+    List<ModelYourNews>.from(listData.map((e) => ModelYourNews.fromJson(e)));
 
-// ignore: non_constant_identifier_names
-String ModelYourNewsToJson(ModelYourNews data) => json.encode(data.toJson());
+String modelYourNewsToJson(List<ModelYourNews> data) =>
+    json.encode(List.from(data.map((x) => x.toJson())));
 
 class ModelYourNews {
   int? id;

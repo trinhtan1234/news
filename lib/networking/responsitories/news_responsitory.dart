@@ -33,15 +33,15 @@ class NewsRepository {
     }
   }
 
-  Future<ModelYourNews?> getYourNews() async {
+  Future<List<ModelYourNews>?> getYourNews() async {
     try {
       final response = await _server.request(UrlApp.getYourNews);
       final dataResponse = response?.data;
-      if (dataResponse != null) {
-        if (dataResponse is List) {
-          final listData = dataResponse.cast<Map<String, dynamic>>();
-          return ModelYourNews.fromJson(listData as Map<String, dynamic>);
-        }
+      if (dataResponse != null && dataResponse is List) {
+        List<ModelYourNews> listData = dataResponse
+            .map((item) => ModelYourNews.fromJson(item as Map<String, dynamic>))
+            .toList();
+        return listData;
       }
       return null;
     } catch (e) {
