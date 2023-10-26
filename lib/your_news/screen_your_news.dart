@@ -44,11 +44,17 @@ class _ScreenYourNewsState extends State<ScreenYourNews> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          'Tin tiếng việt',
-          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.red),
+        title: TextButton(
+          onPressed: () {},
+          child: const Text(
+            'Tin tiếng việt',
+            style: TextStyle(fontSize: 20),
+          ),
         ),
-        leading: const Icon(Icons.newspaper),
+        leading: IconButton(
+          onPressed: () {},
+          icon: const Icon(Icons.newspaper_outlined),
+        ),
         actions: [
           TextButton(
             onPressed: () {},
@@ -106,10 +112,10 @@ class _ScreenYourNewsState extends State<ScreenYourNews> {
                     return Column(
                       children: [
                         Container(
-                          // color: Colors.grey,
                           margin: const EdgeInsets.only(right: 10, left: 10),
                           child: Column(
                             children: [
+                              const Divider(),
                               Row(
                                 children: [
                                   Flexible(
@@ -123,6 +129,7 @@ class _ScreenYourNewsState extends State<ScreenYourNews> {
                                   ),
                                 ],
                               ),
+                              const Padding(padding: EdgeInsets.only(top: 10)),
                               Row(
                                 children: [
                                   Flexible(
@@ -142,10 +149,67 @@ class _ScreenYourNewsState extends State<ScreenYourNews> {
                                   ),
                                 ],
                               ),
+                              const Padding(padding: EdgeInsets.only(top: 10)),
                               if (imageURL != null && imageURL.isNotEmpty)
-                                Image(
-                                  image: NetworkImage(imageURL),
+                                SizedBox(
+                                  width: MediaQuery.of(context).size.width - 20,
+                                  child: ClipRect(
+                                    child: AspectRatio(
+                                      aspectRatio: 16 / 9,
+                                      child: Image(
+                                        image: NetworkImage(imageURL),
+                                        fit: BoxFit.cover,
+                                        // width: MediaQuery.of(context).size -20,
+                                      ),
+                                    ),
+                                  ),
                                 ),
+                              Row(
+                                children: [
+                                  Expanded(
+                                    child: Row(
+                                      children: [
+                                        TextButton(
+                                          onPressed: () {},
+                                          child: Text(
+                                              listNews[index].thoiGian ?? ''),
+                                        ),
+                                        TextButton(
+                                          onPressed: () {},
+                                          child:
+                                              Text(listNews[index].chuDe ?? ''),
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                  Row(
+                                    children: [
+                                      IconButton(
+                                        onPressed: () {},
+                                        icon: Row(
+                                          children: [
+                                            const Icon(Icons.message_outlined),
+                                            const Padding(
+                                                padding:
+                                                    EdgeInsets.only(right: 5)),
+                                            Text(
+                                              '${listNews[index].soNguoiDaDoc ?? ''}',
+                                              style: const TextStyle(
+                                                color: Colors.red,
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                      IconButton(
+                                        onPressed: () {},
+                                        icon: const Icon(
+                                            Icons.watch_later_outlined),
+                                      )
+                                    ],
+                                  ),
+                                ],
+                              ),
                             ],
                           ),
                         ),
