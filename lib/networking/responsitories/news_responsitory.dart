@@ -1,3 +1,4 @@
+import 'package:news/networking/models/model_googlenews.dart';
 import 'package:news/networking/models/model_newstech.dart';
 import 'package:news/networking/models/model_yournews.dart';
 import 'package:news/networking/models/newsmodel.dart';
@@ -42,6 +43,19 @@ class NewsRepository {
             .map((item) => ModelYourNews.fromJson(item as Map<String, dynamic>))
             .toList();
         return listData;
+      }
+      return null;
+    } catch (e) {
+      rethrow;
+    }
+  }
+
+  Future<ModelGoogleNews?> getGoogleNews() async {
+    try {
+      final response = await _server.request(UrlApp.getNewGoogle);
+      final dataResponse = response?.data;
+      if (dataResponse != null) {
+        return ModelGoogleNews.fromJson(dataResponse);
       }
       return null;
     } catch (e) {
