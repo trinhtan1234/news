@@ -102,6 +102,7 @@ class _ScreenYourNewsState extends State<ScreenYourNews> {
                 child: ListView.builder(
                   itemCount: listNews.length,
                   itemBuilder: ((context, index) {
+                    String? imageURL = listNews[index].imageTieuDe;
                     return Column(
                       children: [
                         Container(
@@ -141,6 +142,10 @@ class _ScreenYourNewsState extends State<ScreenYourNews> {
                                   ),
                                 ],
                               ),
+                              if (imageURL != null && imageURL.isNotEmpty)
+                                Image(
+                                  image: NetworkImage(imageURL),
+                                ),
                             ],
                           ),
                         ),
