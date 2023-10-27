@@ -1,9 +1,9 @@
-import 'package:news/networking/models/model_googlenews.dart';
-import 'package:news/networking/models/model_newstech.dart';
-import 'package:news/networking/models/model_yournews.dart';
-import 'package:news/networking/models/newsmodel.dart';
-import 'package:news/networking/responsitories/http_service.dart';
-import 'package:news/networking/responsitories/url.dart';
+import 'package:news/home/networking/models/model_googlenews.dart';
+import 'package:news/home/networking/models/model_newstech.dart';
+import 'package:news/home/networking/models/model_yournews.dart';
+import 'package:news/home/networking/models/newsmodel.dart';
+import 'package:news/home/networking/responsitories/http_service.dart';
+import 'package:news/home/networking/responsitories/url.dart';
 
 class NewsRepository {
   final HttpService _server = HttpService();

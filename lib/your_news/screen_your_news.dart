@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news/home/bloc/news_bloc.dart';
-import 'package:news/networking/models/model_yournews.dart';
+import 'package:news/home/networking/models/model_yournews.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 import 'package:skeletons/skeletons.dart';
 
@@ -193,7 +193,8 @@ class _ScreenYourNewsState extends State<ScreenYourNews> {
                                                 padding:
                                                     EdgeInsets.only(right: 5)),
                                             Text(
-                                              '${listNews[index].soNguoiDaDoc ?? ''}',
+                                              listNews[index].soNguoiDaDoc ??
+                                                  '',
                                               style: const TextStyle(
                                                 color: Colors.red,
                                               ),

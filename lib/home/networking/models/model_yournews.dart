@@ -7,14 +7,14 @@ String modelYourNewsToJson(List<ModelYourNews> data) =>
     json.encode(List.from(data.map((x) => x.toJson())));
 
 class ModelYourNews {
-  int? id;
+  String? id;
   String? tinhThanhPho;
   String? tieuDe;
   String? content;
   String? noiDung;
   String? tacGia;
   String? chuDe;
-  int? soNguoiDaDoc;
+  String? soNguoiDaDoc;
   String? thoiGian;
   String? imageTieuDe;
   String? image2;

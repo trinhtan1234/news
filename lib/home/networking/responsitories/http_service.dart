@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:dio_cache_interceptor/dio_cache_interceptor.dart';
-import 'package:news/networking/responsitories/url.dart';
+import 'package:news/home/networking/responsitories/url.dart';
 
 class HttpService {
   final Dio _dio = Dio();

@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:news/networking/responsitories/url.dart';
+import 'package:news/home/networking/responsitories/url.dart';
 
 class HttpClient {
   final Dio _dio = Dio();

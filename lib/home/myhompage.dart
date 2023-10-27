@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news/home/bloc/news_bloc.dart';
-import 'package:news/networking/models/newsmodel.dart';
+import 'package:news/home/networking/models/newsmodel.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 import 'package:skeletons/skeletons.dart';
 

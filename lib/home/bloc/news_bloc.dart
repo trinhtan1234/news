@@ -1,10 +1,10 @@
 import 'dart:async';
 
-import 'package:news/networking/models/model_googlenews.dart';
-import 'package:news/networking/models/model_newstech.dart';
-import 'package:news/networking/models/model_yournews.dart';
-import 'package:news/networking/models/newsmodel.dart';
-import 'package:news/networking/responsitories/news_responsitory.dart';
+import 'package:news/home/networking/models/model_googlenews.dart';
+import 'package:news/home/networking/models/model_newstech.dart';
+import 'package:news/home/networking/models/model_yournews.dart';
+import 'package:news/home/networking/models/newsmodel.dart';
+import 'package:news/home/networking/responsitories/news_responsitory.dart';
 
 class NewsBloc {
   final _newsRepo = NewsRepository();

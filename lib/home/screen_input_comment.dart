@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:news/networking/models/newsmodel.dart';
+import 'package:news/home/networking/models/newsmodel.dart';
 
 class ScreenInputComment extends StatelessWidget {
   final Article news;
